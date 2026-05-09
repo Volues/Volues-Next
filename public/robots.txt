@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://scary-warm-ibex-jjux2g.teleporthq.site/sitemap.xml
