@@ -191,13 +191,15 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
-              <li className="navigation-overlay-item">
-                <a href="Solutions">
-                  <div className="navigation-overlay-link">
-                    <span>Solutions</span>
-                  </div>
+              <Link href="/solutions">
+                <a>
+                  <li className="navigation-thq-navigation-overlay-item-elm3 navigation-overlay-item">
+                    <div className="navigation-overlay-link">
+                      <span>Solutions</span>
+                    </div>
+                  </li>
                 </a>
-              </li>
+              </Link>
               <li className="navigation-overlay-item">
                 <Link href="/projects">
                   <a>
@@ -326,6 +328,9 @@ const Navigation = (props) => {
             display: block;
             object-fit: contain;
             vertical-align: middle;
+          }
+          .navigation-thq-navigation-overlay-item-elm3 {
+            text-decoration: none;
           }
           .navigation-container2 {
             display: none;
