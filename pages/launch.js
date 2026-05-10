@@ -101,7 +101,7 @@ const Launch = (props) => {
               </div>
             </div>
             <div className="page-hero-visual">
-              <div className="page-card-11 floating-ui-card">
+              <div className="page-card-11">
                 <div className="hero-mockup2-hero-mockup-visual">
                   <div className="hero-mockup2-hero-mockup-phone-frame">
                     <div className="hero-mockup-phone-inner">
@@ -269,13 +269,6 @@ const Launch = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="page-card-21 floating-ui-card">
-                <img
-                  alt="UI Element"
-                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=400"
-                />
-              </div>
-              <div className="glow-orb"></div>
             </div>
           </div>
         </section>
