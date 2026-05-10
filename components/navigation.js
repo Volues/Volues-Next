@@ -42,11 +42,13 @@ const Navigation = (props) => {
                   </Link>
                 </li>
                 <li className="navigation-item">
-                  <a href="Solutions">
-                    <div className="navigation-link">
-                      <span>Solutions</span>
-                    </div>
-                  </a>
+                  <Link href="/solutions">
+                    <a>
+                      <div className="navigation-thq-navigation-link-elm3 navigation-link">
+                        <span>Solutions</span>
+                      </div>
+                    </a>
+                  </Link>
                 </li>
                 <li className="navigation-item">
                   <Link href="/projects">
@@ -191,15 +193,6 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
-              <Link href="/solutions">
-                <a>
-                  <li className="navigation-thq-navigation-overlay-item-elm3 navigation-overlay-item">
-                    <div className="navigation-overlay-link">
-                      <span>Solutions</span>
-                    </div>
-                  </li>
-                </a>
-              </Link>
               <li className="navigation-overlay-item">
                 <Link href="/projects">
                   <a>
@@ -322,15 +315,15 @@ const Navigation = (props) => {
             object-fit: contain;
             vertical-align: middle;
           }
+          .navigation-thq-navigation-link-elm3 {
+            text-decoration: none;
+          }
           .navigation-image2 {
             width: 80px;
             height: auto;
             display: block;
             object-fit: contain;
             vertical-align: middle;
-          }
-          .navigation-thq-navigation-overlay-item-elm3 {
-            text-decoration: none;
           }
           .navigation-container2 {
             display: none;

@@ -203,6 +203,7 @@ const Footer = (props) => {
                         </a>
                       </Link>
                     </li>
+                    <li className="footer-nav-item"></li>
                     <li className="footer-nav-item">
                       <Link href="/solutions">
                         <a>
@@ -212,6 +213,7 @@ const Footer = (props) => {
                         </a>
                       </Link>
                     </li>
+                    <li className="footer-nav-item"></li>
                   </ul>
                 </div>
                 <div className="footer-newsletter-column footer-nav-group">
