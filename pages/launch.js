@@ -102,14 +102,176 @@ const Launch = (props) => {
             </div>
             <div className="page-hero-visual">
               <div className="floating-ui-card page-card-11">
-                <img
-                  src="https://images.pexels.com/photos/27141314/pexels-photo-27141314.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Dashboard Mockup"
-                />
+                <div className="hero-mockup2-hero-mockup-visual">
+                  <div className="hero-mockup2-hero-mockup-phone-frame">
+                    <div className="hero-mockup-phone-inner">
+                      <div className="hero-mockup-dashboard">
+                        <div className="hero-mockup-dashboard-header">
+                          <div className="hero-mockup-user">
+                            <div className="hero-mockup-avatar"></div>
+                            <div className="hero-mockup-user-info">
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-name"></div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-sub"></div>
+                            </div>
+                          </div>
+                          <div className="hero-mockup-notif"></div>
+                        </div>
+                        <div className="hero-mockup-dashboard-grid">
+                          <div className="hero-mockup-card-main hero-mockup-card">
+                            <div className="hero-mockup-card-title">
+                              <span>Analytics Overview</span>
+                            </div>
+                            <div className="hero-mockup-chart">
+                              <svg
+                                viewBox="0 0 200 100"
+                                className="hero-mockup-svg-chart"
+                              >
+                                <path
+                                  d="M0 80 Q 25 70, 50 85 T 100 60 T 150 40 T 200 20"
+                                  fill="none"
+                                  stroke="var(--color-primary)"
+                                  strokeWidth="3"
+                                ></path>
+                                <path
+                                  d="M0 80 Q 25 70, 50 85 T 100 60 T 150 40 T 200 20 L 200 100 L 0 100 Z"
+                                  fill="url(#chartGradient)"
+                                  opacity="0.2"
+                                ></path>
+                                <defs>
+                                  <linearGradient
+                                    id="chartGradient"
+                                    x1="0"
+                                    x2="0"
+                                    y1="0"
+                                    y2="1"
+                                  >
+                                    <stop
+                                      offset="0%"
+                                      stopColor="var(--color-primary)"
+                                    ></stop>
+                                    <stop
+                                      offset="100%"
+                                      stopColor="transparent"
+                                    ></stop>
+                                  </linearGradient>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                          <div className="hero-mockup-card-row">
+                            <div className="hero-mockup-card-sm hero-mockup-card">
+                              <div className="hero-mockup-icon-box">
+                                <svg
+                                  fill="none"
+                                  width="18"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  height="18"
+                                  stroke="var(--color-primary)"
+                                  viewBox="0 0 24 24"
+                                  strokeWidth="2"
+                                >
+                                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                              </div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-val"></div>
+                            </div>
+                            <div className="hero-mockup-card-sm hero-mockup-card">
+                              <div className="hero-mockup-icon-box">
+                                <svg
+                                  fill="none"
+                                  width="18"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  height="18"
+                                  stroke="var(--color-secondary)"
+                                  viewBox="0 0 24 24"
+                                  strokeWidth="2"
+                                >
+                                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                              </div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-val"></div>
+                            </div>
+                          </div>
+                          <div className="hero-mockup-card-list hero-mockup-card">
+                            <div className="hero-mockup-list-item">
+                              <div className="hero-mockup-dot"></div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-line"></div>
+                            </div>
+                            <div className="hero-mockup-list-item">
+                              <div className="hero-mockup-dot"></div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-line"></div>
+                            </div>
+                            <div className="hero-mockup-list-item">
+                              <div className="hero-mockup-dot"></div>
+                              <div className="hero-mockup-skeleton hero-mockup-skeleton-line"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="hero-mockup-nav">
+                          <div className="hero-mockup-nav-item active"></div>
+                          <div className="hero-mockup-nav-item"></div>
+                          <div className="hero-mockup-nav-item"></div>
+                          <div className="hero-mockup-nav-item"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hero-mockup-floating hero-mockup-floating-1">
+                    <div className="hero-mockup-glass-card">
+                      <div className="hero-mockup-glass-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="var(--color-accent)"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                        >
+                          <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                        </svg>
+                      </div>
+                      <div className="hero-mockup-glass-content">
+                        <div className="hero-mockup-glass-title">
+                          <span>Real-time Sync</span>
+                        </div>
+                        <div className="hero-mockup-glass-text">
+                          <span>Active Instance</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hero-mockup-floating hero-mockup-floating-2">
+                    <div className="hero-mockup-glass-card">
+                      <div className="hero-mockup-glass-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="var(--color-primary)"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                        >
+                          <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                          <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                        </svg>
+                      </div>
+                      <div className="hero-mockup-glass-content">
+                        <div className="hero-mockup-glass-title">
+                          <span>Scalable Arch</span>
+                        </div>
+                        <div className="hero-mockup-glass-text">
+                          <span>Cloud Native</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="floating-ui-card page-card-21">
                 <img
-                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=400"
                   alt="UI Element"
                 />
               </div>

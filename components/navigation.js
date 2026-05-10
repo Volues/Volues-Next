@@ -15,7 +15,7 @@ const Navigation = (props) => {
                 <div className="navigation-logo">
                   <img
                     alt="image"
-                    src="/volueswhitelogo-200h.png"
+                    src="/voluesblacklogo-200h.png"
                     className="navigation-image1"
                   />
                 </div>
