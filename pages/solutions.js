@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 const Solutions = (props) => {
   return (
     <>
-      <div className="solutions-container1">
+      <div className="solutions-container10">
         <Head>
           <title>Solutions - Premium Software Development Company</title>
           <meta
@@ -39,8 +39,8 @@ const Solutions = (props) => {
           />
         </Head>
         <Navigation></Navigation>
-        <div className="solutions-container2">
-          <div className="solutions-container3">
+        <div className="solutions-container11">
+          <div className="solutions-container12">
             <Script
               html={`<style>
 section {
@@ -269,22 +269,52 @@ section {
           <div className="partners-container">
             <div className="partners-grid">
               <div className="solutions1-partner-logo">
-                <span>TECHFLOW</span>
+                <span>Shadcn/UI</span>
               </div>
               <div className="solutions1-partner-logo">
-                <span>NEXUS</span>
+                <span>Tailwind CSS</span>
               </div>
               <div className="solutions1-partner-logo">
-                <span>QUANTUM</span>
+                <span>Railway</span>
               </div>
               <div className="solutions1-partner-logo">
-                <span>VELOCITY</span>
+                <span>Linear</span>
               </div>
               <div className="solutions1-partner-logo">
-                <span>ZENITH</span>
+                <span>Slack/Discord</span>
               </div>
               <div className="solutions1-partner-logo">
-                <span>CORE</span>
+                <span>Jetbrains Suite</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Cursor</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Adobe Express</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Shadcn/UI</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Tailwind CSS</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Railway</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Linear</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Slack/Discord</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Jetbrains Suite</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Cursor</span>
+              </div>
+              <div className="solutions1-partner-logo">
+                <span>Adobe Express</span>
               </div>
             </div>
           </div>
@@ -873,8 +903,8 @@ section {
             <button className="btn btn-accent btn-xl">Start a Project</button>
           </div>
         </section>
-        <div className="solutions-container4">
-          <div className="solutions-container5">
+        <div className="solutions-container13">
+          <div className="solutions-container14">
             <Script
               html={`<style>
         @keyframes float {0%,100% {transform: translateY(0);}
@@ -883,8 +913,8 @@ section {
             ></Script>
           </div>
         </div>
-        <div className="solutions-container6">
-          <div className="solutions-container7">
+        <div className="solutions-container15">
+          <div className="solutions-container16">
             <Script
               html={`<script defer data-name="volues-animations">
 (function(){
@@ -938,7 +968,7 @@ section {
         </div>
         <Footer></Footer>
         <div>
-          <div className="solutions-container9">
+          <div className="solutions-container18">
             <Script
               html={`<style>
 @keyframes card-glow {
@@ -995,17 +1025,33 @@ section {
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="solutions-container20">
+            <Script
+              html={`<style>
+@keyframes marquee-scroll {
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-50%);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
-          .solutions-container1 {
+          .solutions-container10 {
             width: 100%;
             min-height: 100vh;
           }
-          .solutions-container2 {
+          .solutions-container11 {
             display: none;
           }
-          .solutions-container3 {
+          .solutions-container12 {
             display: contents;
           }
           .solutions-thq-dashboard-ui-elm {
@@ -1105,19 +1151,22 @@ section {
             padding-top: 4px;
             flex-direction: column;
           }
-          .solutions-container4 {
+          .solutions-container13 {
             display: none;
           }
-          .solutions-container5 {
+          .solutions-container14 {
             display: contents;
           }
-          .solutions-container6 {
+          .solutions-container15 {
             display: none;
           }
-          .solutions-container7 {
+          .solutions-container16 {
             display: contents;
           }
-          .solutions-container9 {
+          .solutions-container18 {
+            display: contents;
+          }
+          .solutions-container20 {
             display: contents;
           }
         `}
