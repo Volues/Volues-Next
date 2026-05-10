@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -62,9 +63,11 @@ const Home = (props) => {
                 visionary ideas into scalable, futuristic realities.
               </p>
               <div className="hero-actions">
-                <button className="btn-lg btn btn-primary">
-                  Launch Your Vision
-                </button>
+                <Link href="/launch">
+                  <a className="home-link btn-lg btn btn-primary">
+                    Launch Your Vision
+                  </a>
+                </Link>
                 <button className="btn-lg btn btn-outline">
                   View Projects
                 </button>
@@ -780,6 +783,10 @@ const Home = (props) => {
           .home-container1 {
             width: 100%;
             min-height: 100vh;
+          }
+          .home-link {
+            text-align: center;
+            text-decoration: none;
           }
           .home-thq-projects-masonry-elm {
             gap: var(--spacing-2xl);
