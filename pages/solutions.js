@@ -89,11 +89,137 @@ section {
           </div>
           <div className="solutions1-hero-visual">
             <div className="solutions1-mockup-container">
-              <img
-                src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=1500"
-                alt="Futuristic Dashboard Mockup"
-                className="solutions1-mockup-image main-mockup"
-              />
+              <div className="solutions-thq-dashboard-ui-elm">
+                <div className="solutions-thq-dashboard-header-elm">
+                  <div className="solutions-thq-dashboard-title-elm">
+                    <span>Analytics on SaaS  Platform</span>
+                  </div>
+                  <div className="solutions-thq-dashboard-date-elm">
+                    <span>Live</span>
+                  </div>
+                </div>
+                <div className="solutions-thq-dashboard-grid-elm">
+                  <div className="solutions-thq-dashboard-card-elm1 dashboard-card">
+                    <div className="card-header">
+                      <span className="card-name">Revenue</span>
+                      <span className="solutions-thq-card-badge-elm">+24%</span>
+                    </div>
+                    <div className="solutions-thq-chart-area-elm">
+                      <svg
+                        viewBox="0 0 200 60"
+                        className="solutions-thq-chart-svg-elm"
+                      >
+                        <polyline
+                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
+                          fill="none"
+                          stroke="#00A3C6"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></polyline>
+                        <polyline
+                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
+                          fill="url(#grad1)"
+                          stroke="none"
+                          opacity="0.2"
+                        ></polyline>
+                        <defs>
+                          <linearGradient
+                            id="grad1"
+                            x1="0%"
+                            y1="0%"
+                            x2="0%"
+                            y2="100%"
+                          >
+                            <stop
+                              offset="0%"
+                              className="solutions-icon14"
+                            ></stop>
+                            <stop
+                              offset="100%"
+                              className="solutions-icon15"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div className="card-metric">
+                      <span>$2.4M</span>
+                    </div>
+                  </div>
+                  <div className="dashboard-card">
+                    <div className="card-header">
+                      <span className="card-name">Users</span>
+                    </div>
+                    <div className="solutions-thq-mini-chart-elm">
+                      <div className="bar"></div>
+                      <div className="bar"></div>
+                      <div className="bar"></div>
+                      <div className="bar"></div>
+                      <div className="bar"></div>
+                      <div className="bar"></div>
+                    </div>
+                    <div className="card-metric">
+                      <span>18.2K</span>
+                    </div>
+                  </div>
+                  <div className="dashboard-card">
+                    <div className="card-header">
+                      <span className="card-name">Uptime</span>
+                    </div>
+                    <div className="solutions-thq-gauge-ring-elm">
+                      <svg
+                        viewBox="0 0 100 100"
+                        className="solutions-thq-gauge-svg-elm"
+                      >
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          fill="none"
+                          stroke="#E5E7EB"
+                          strokeWidth="8"
+                        ></circle>
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          fill="none"
+                          stroke="#00A3C6"
+                          strokeWidth="8"
+                          strokeDasharray="220"
+                          strokeDashoffset="8"
+                          strokeLinecap="round"
+                          className="solutions-thq-gauge-progress-elm"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <div className="card-metric">
+                      <span>99.9%</span>
+                    </div>
+                  </div>
+                  <div className="solutions-thq-dashboard-card-elm4 dashboard-card">
+                    <div className="card-header">
+                      <span className="card-name">Active Sessions</span>
+                      <span className="pulse-dot"></span>
+                    </div>
+                    <div className="solutions-thq-session-bars-elm">
+                      <div className="session-bar">
+                        <div className="session-fill"></div>
+                      </div>
+                      <div className="session-bar">
+                        <div className="session-fill"></div>
+                      </div>
+                      <div className="session-bar">
+                        <div className="session-fill"></div>
+                      </div>
+                      <div className="session-bar">
+                        <div className="session-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="solutions1-floating-card solutions1-card-1">
                 <div className="card-icon-wrapper">
                   <svg
@@ -811,6 +937,64 @@ section {
           </div>
         </div>
         <Footer></Footer>
+        <div>
+          <div className="solutions-container9">
+            <Script
+              html={`<style>
+@keyframes card-glow {
+0%, 100% {
+  box-shadow: 0 0 0 rgba(0, 163, 198, 0);
+}
+50% {
+  box-shadow: 0 0 20px rgba(0, 163, 198, 0.15);
+}
+}
+
+@keyframes bar-pulse {
+0%, 100% {
+  opacity: 0.6;
+  transform: scaleY(0.8);
+}
+50% {
+  opacity: 1;
+  transform: scaleY(1);
+}
+}
+
+@keyframes gauge-glow {
+0%, 100% {
+  stroke: #00A3C6;
+  filter: drop-shadow(0 0 2px rgba(0,163,198,0.3));
+}
+50% {
+  stroke: #00FFD6;
+  filter: drop-shadow(0 0 6px rgba(0,255,214,0.5));
+}
+}
+
+@keyframes pulse-dot {
+0%, 100% {
+  transform: scale(1);
+  opacity: 1;
+}
+50% {
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+}
+
+@keyframes fill-slide {
+0%, 100% {
+  opacity: 0.7;
+}
+50% {
+  opacity: 1;
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -824,6 +1008,103 @@ section {
           .solutions-container3 {
             display: contents;
           }
+          .solutions-thq-dashboard-ui-elm {
+            width: 100%;
+            border: 1px solid var(--glass-border);
+            padding: var(--spacing-lg);
+            overflow: hidden;
+            transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+            background: #0b1220;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+            border-radius: var(--border-radius-xl);
+          }
+          .solutions-thq-dashboard-header-elm {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            justify-content: space-between;
+          }
+          .solutions-thq-dashboard-title-elm {
+            color: #fff;
+            font-size: var(--font-size-sm);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-heading);
+            letter-spacing: 0.05em;
+          }
+          .solutions-thq-dashboard-date-elm {
+            color: var(--color-primary);
+            padding: 2px 8px;
+            font-size: var(--font-size-xs);
+            background: rgba(0, 163, 198, 0.15);
+            font-weight: var(--font-weight-medium);
+            border-radius: var(--border-radius-full);
+          }
+          .solutions-thq-dashboard-grid-elm {
+            gap: var(--spacing-sm);
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          .solutions-thq-dashboard-card-elm1 {
+            grid-column: span 2;
+          }
+          .solutions-thq-card-badge-elm {
+            color: #059669;
+            padding: 2px 6px;
+            font-size: var(--font-size-xs);
+            background: #d1fae5;
+            font-weight: var(--font-weight-heading);
+            border-radius: var(--border-radius-sm);
+          }
+          .solutions-thq-chart-area-elm {
+            flex: 1;
+            min-height: 40px;
+          }
+          .solutions-thq-chart-svg-elm {
+            width: 100%;
+            height: 100%;
+          }
+          .solutions-icon14 {
+            stop-color: #00a3c6;
+            stop-opacity: 1;
+          }
+          .solutions-icon15 {
+            stop-color: #00a3c6;
+            stop-opacity: 0;
+          }
+          .solutions-thq-mini-chart-elm {
+            gap: 4px;
+            height: 35px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          }
+          .solutions-thq-gauge-ring-elm {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .solutions-thq-gauge-svg-elm {
+            width: 45px;
+            height: 45px;
+          }
+          .solutions-thq-gauge-progress-elm {
+            animation: gauge-glow 3s ease-in-out infinite;
+            transform: rotate(-90deg);
+            transform-origin: center;
+          }
+          .solutions-thq-dashboard-card-elm4 {
+            grid-column: span 3;
+          }
+          .solutions-thq-session-bars-elm {
+            gap: 6px;
+            display: flex;
+            padding-top: 4px;
+            flex-direction: column;
+          }
           .solutions-container4 {
             display: none;
           }
@@ -834,6 +1115,9 @@ section {
             display: none;
           }
           .solutions-container7 {
+            display: contents;
+          }
+          .solutions-container9 {
             display: contents;
           }
         `}

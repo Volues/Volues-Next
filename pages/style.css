@@ -4542,14 +4542,6 @@
   max-width: 600px;
 }
  
-.solutions1-mockup-image {
-  width: 100%;
-  border: 1px solid var(--glass-border);
-  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
-  border-radius: var(--border-radius-xl);
-}
- 
 
  
 .solutions1-floating-card {
@@ -5083,6 +5075,78 @@
 .footer-links  a:hover {
   color: var(--color-primary);
   opacity: 1;
+}
+ 
+.dashboard-card {
+  gap: 4px;
+  display: flex;
+  padding: var(--spacing-sm);
+  animation: card-glow 4s ease-in-out infinite;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--border-radius-md);
+  flex-direction: column;
+}
+ 
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.card-name {
+  color: #4A5568;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.card-metric {
+  color: #0B1220;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+}
+ 
+.bar {
+  width: 6px;
+  animation: bar-pulse 2s ease-in-out infinite;
+  background: linear-gradient(to top, #00A3C6, #00FFD6);
+  border-radius: 2px;
+}
+ 
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+ 
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+ 
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+ 
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+ 
+.bar:nth-child(6) {
+  animation-delay: 1.0s;
+}
+ 
+.session-bar {
+  height: 6px;
+  overflow: hidden;
+  background: #E5E7EB;
+  border-radius: 3px;
+}
+ 
+.session-fill {
+  height: 100%;
+  animation: fill-slide 3s ease-in-out infinite;
+  background: linear-gradient(90deg, #00A3C6, #00FFD6);
+  border-radius: 3px;
 }
  
 .Headings {
