@@ -67,10 +67,10 @@ body {
                 scalable reality.
               </p>
               <div className="solutions-overview-hero-actions">
-                <button className="btn btn-primary btn-lg">
+                <button className="btn-lg btn btn-primary">
                   Book Consultation
                 </button>
-                <button className="btn btn-lg btn-outline">
+                <button className="btn-lg btn btn-outline">
                   View Projects
                 </button>
               </div>
@@ -78,25 +78,25 @@ body {
             <div className="hero-visual">
               <div className="mockup-container">
                 <img
-                  src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Futuristic Dashboard Mockup"
+                  src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="mockup-image"
                 />
                 <div className="solutions-overview-floating-card solutions-overview-card-1">
                   <div className="solutions-overview-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M16 7h6v6"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M16 7h6v6"
                       ></path>
                       <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
                     </svg>
@@ -109,18 +109,18 @@ body {
                 <div className="solutions-overview-floating-card solutions-overview-card-2">
                   <div className="solutions-overview-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M12 2v2m-7.07.93l1.41 1.41M20 12h2m-2.93-7.07l-1.41 1.41m-1.713 6.31a4 4 0 0 0-5.925-4.128M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 2v2m-7.07.93l1.41 1.41M20 12h2m-2.93-7.07l-1.41 1.41m-1.713 6.31a4 4 0 0 0-5.925-4.128M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6"
                       ></path>
                     </svg>
                   </div>
@@ -168,18 +168,18 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                   ></path>
                 </svg>
               </div>
@@ -193,25 +193,25 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <g
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <rect
-                      width="14"
-                      height="20"
                       x="5"
                       y="2"
                       rx="2"
                       ry="2"
+                      width="14"
+                      height="20"
                     ></rect>
                     <path d="M12 18h.01"></path>
                   </g>
@@ -227,17 +227,17 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <g
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                     <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
@@ -255,19 +255,19 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <g
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <rect x="3" y="3" rx="2" width="18" height="18"></rect>
                     <path d="M3 9h18M9 21V9"></path>
                   </g>
                 </svg>
@@ -283,18 +283,18 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                   ></path>
                 </svg>
               </div>
@@ -308,17 +308,17 @@ body {
             <div className="solutions-overview-service-card">
               <div className="solutions-overview-service-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <g
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
@@ -341,8 +341,8 @@ body {
           <div className="projects-grid">
             <div className="project-card">
               <img
-                src="https://images.pexels.com/photos/27141314/pexels-photo-27141314.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 alt="FinTech Platform"
+                src="https://images.pexels.com/photos/27141314/pexels-photo-27141314.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="project-img"
               />
               <div className="solutions-overview-project-overlay">
@@ -352,13 +352,13 @@ body {
                   A complete digital banking overhaul with real-time transaction
                   processing.
                 </p>
-                <button className="btn btn-link">View Case Study</button>
+                <button className="btn-link btn">View Case Study</button>
               </div>
             </div>
             <div className="project-card">
               <img
-                src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 alt="AI Dashboard"
+                src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="project-img"
               />
               <div className="solutions-overview-project-overlay">
@@ -370,7 +370,7 @@ body {
                   Advanced predictive modeling interface for enterprise data
                   visualization.
                 </p>
-                <button className="btn btn-link">View Case Study</button>
+                <button className="btn-link btn">View Case Study</button>
               </div>
             </div>
           </div>
@@ -379,8 +379,8 @@ body {
           <div className="why-container">
             <div className="why-visual">
               <img
-                src="https://images.pexels.com/photos/33433724/pexels-photo-33433724.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 alt="Tech Excellence"
+                src="https://images.pexels.com/photos/33433724/pexels-photo-33433724.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="why-img"
               />
             </div>
@@ -425,18 +425,18 @@ body {
                 <div className="feature-block">
                   <div className="feature-stat">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
                       ></path>
                     </svg>
                   </div>
@@ -453,18 +453,18 @@ body {
                 <div className="feature-block">
                   <div className="feature-stat">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
                       ></path>
                     </svg>
                   </div>
@@ -641,8 +641,8 @@ body {
               engineering.
             </p>
             <div className="cta-actions">
-              <button className="btn btn-accent btn-xl">Start a Project</button>
-              <button className="btn btn-outline btn-xl">Contact Sales</button>
+              <button className="btn-accent btn btn-xl">Start a Project</button>
+              <button className="btn btn-xl btn-outline">Contact Sales</button>
             </div>
           </div>
         </section>

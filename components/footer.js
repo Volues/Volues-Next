@@ -17,7 +17,7 @@ const Footer = (props) => {
                     <span className="footer-logo-text">VOLUES</span>
                     <img
                       alt="image"
-                      src="/volues%20ash%20logo-200h.png"
+                      src="/voluesashlogo-200h.png"
                       className="footer-image"
                     />
                   </div>
