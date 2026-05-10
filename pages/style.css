@@ -7227,27 +7227,46 @@
 }
  
 .trust-wrapper {
-  padding: var(--spacing-xl) 0;
-  border-y: 1px solid rgba(0,0,0,0.06);
-  background: #ffffff;
+  padding: var(--spacing-md) 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  background: transparent;
 }
  
 
  
 .trust-scroll {
-  gap: var(--spacing-2xl);
-  filter: grayscale(1);
+  gap: var(--spacing-lg);
   display: flex;
-  opacity: 0.6;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  overflow-x: auto;
   align-items: center;
-  justify-content: space-around;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-overflow-scrolling: touch;
 }
  
 .trust-item {
+  flex: 0 0 auto;
+  color: var(--color-on-primary);
+  border: 1px solid var(--glass-border);
+  padding: var(--spacing-sm) var(--spacing-lg);
   font-size: var(--font-size-sm);
+  background: var(--glass-bg);
+  transition: all 0.3s ease;
   font-family: var(--font-family-heading);
+  white-space: nowrap;
+  border-radius: var(--border-radius-full);
   letter-spacing: 2px;
   text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  scroll-snap-align: center;
+  -webkit-backdrop-filter: blur(8px);
 }
  
 .services-wrapper {
@@ -7561,6 +7580,54 @@
  
 .faq-item[open] summary::after {
   transform: rotate(45deg);
+}
+ 
+.trust-scroll::-webkit-scrollbar {
+  display: none;
+}
+ 
+.trust-item:hover {
+  background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  box-shadow: var(--shadow-level-1);
+  border-color: var(--color-primary);
+}
+ 
+.trust-nav-btn {
+  color: var(--color-on-primary);
+  width: 28px;
+  border: 1px solid var(--glass-border);
+  cursor: pointer;
+  height: 28px;
+  display: flex;
+  background: var(--glass-bg);
+  transition: all 0.2s ease;
+  align-items: center;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  -webkit-backdrop-filter: blur(4px);
+}
+ 
+.trust-nav-btn:hover {
+  background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  border-color: var(--color-primary);
+}
+ 
+.trust-dot {
+  width: 6px;
+  border: none;
+  cursor: pointer;
+  height: 6px;
+  padding: 0;
+  background: var(--color-neutral);
+  transition: all 0.2s ease;
+  border-radius: 50%;
+}
+ 
+.trust-dot.active {
+  width: 18px;
+  background: var(--color-primary);
+  border-radius: var(--border-radius-full);
 }
  
 .Headings {
@@ -8191,6 +8258,16 @@
   }
   .hero-mockup-scale {
     transform: rotateY(-8deg) rotateX(2deg) scale(0.92);
+  }
+  .trust-scroll {
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+    justify-content: flex-start;
+  }
+  .trust-item {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-xs);
+    scroll-snap-align: start;
   }
   .page-services-grid {
     grid-template-columns: 1fr;

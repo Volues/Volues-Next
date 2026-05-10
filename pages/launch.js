@@ -518,6 +518,66 @@ const Launch = (props) => {
               </div>
             </div>
           </div>
+          <div className="launch-thq-trust-nav-elm">
+            <button
+              data-trust-nav="prev"
+              aria-label="Previous trust item"
+              className="button trust-nav-btn"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div className="launch-thq-trust-dots-elm">
+              <button
+                data-trust-dot="0"
+                aria-label="Go to item 1"
+                className="active button trust-dot"
+              ></button>
+              <button
+                data-trust-dot="1"
+                aria-label="Go to item 2"
+                className="button trust-dot"
+              ></button>
+              <button
+                data-trust-dot="2"
+                aria-label="Go to item 3"
+                className="button trust-dot"
+              ></button>
+              <button
+                data-trust-dot="3"
+                aria-label="Go to item 4"
+                className="button trust-dot"
+              ></button>
+            </div>
+            <button
+              data-trust-nav="next"
+              aria-label="Next trust item"
+              className="button trust-nav-btn"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
         </section>
         <section className="services-wrapper">
           <div className="page-container">
@@ -886,63 +946,111 @@ opacity: 0.3;}}
         <div className="launch-container19">
           <div className="launch-container20">
             <Script
-              html={`<script defer data-name="volues-interactions">
-(function(){
-  // Handle scroll reveals for sections
-  const revealOnScroll = () => {
-    const sections = document.querySelectorAll("section")
-    const triggerBottom = window.innerHeight * 0.85
+              html={`<script>
+        ;(function () {
+          // Handle scroll reveals for sections
+          const revealOnScroll = () => {
+            const sections = document.querySelectorAll("section")
+            const triggerBottom = window.innerHeight * 0.85
+            sections.forEach((section) => {
+              const sectionTop = section.getBoundingClientRect().top
+              if (sectionTop < triggerBottom) {
+                section.style.opacity = "1"
+                section.style.transform = "translateY(0)"
+              }
+            })
+          }
+          // Initial state for sections
+          document.querySelectorAll("section").forEach((section) => {
+            section.style.opacity = "0"
+            section.style.transform = "translateY(30px)"
+            section.style.transition = "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)"
+          })
+          window.addEventListener("scroll", revealOnScroll)
+          revealOnScroll() // Run once on load
+          // Form interactive feedback
+          const inputs = document.querySelectorAll(".form-group input, .form-group select, .form-group textarea")
+          inputs.forEach((input) => {
+            input.addEventListener("focus", () => {
+              input.closest(".form-group").style.transform = "translateX(5px)"
+            })
+            input.addEventListener("blur", () => {
+              input.closest(".form-group").style.transform = "translateX(0)"
+            })
+          })
+          // Floating parallax for hero visual
+          document.addEventListener("mousemove", (e) => {
+            const visual = document.querySelector(".hero-visual")
+            if (!visual) return
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01
+            const card1 = document.querySelector(".card-1")
+            const card2 = document.querySelector(".card-2")
+            if (card1) card1.style.transform = \`perspective(1000px) rotateY(\\\${-15 + moveX}deg) rotateX(\\\${10 + moveY}deg) translateZ(20px)\`
+            if (card2) card2.style.transform = \`perspective(1000px) rotateY(\\\${15 + moveX}deg) rotateX(\\\${-5 + moveY}deg) translateZ(-20px)\`
+          })
 
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top
-      if (sectionTop < triggerBottom) {
-        section.style.opacity = "1"
-        section.style.transform = "translateY(0)"
-      }
-    })
-  }
+          // Trust slider navigation
+          const trustScroll = document.querySelector(".trust-scroll")
+          const trustDots = document.querySelectorAll(".trust-dot")
+          const trustNavBtns = document.querySelectorAll("[data-trust-nav]")
 
-  // Initial state for sections
-  document.querySelectorAll("section").forEach((section) => {
-    section.style.opacity = "0"
-    section.style.transform = "translateY(30px)"
-    section.style.transition = "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)"
-  })
+          if (trustScroll && trustDots.length) {
+            const updateActiveDot = () => {
+              const scrollLeft = trustScroll.scrollLeft
+              const itemWidth = trustScroll.querySelector(".trust-item").offsetWidth + parseInt(getComputedStyle(trustScroll).gap)
+              const activeIndex = Math.round(scrollLeft / itemWidth)
+              trustDots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === activeIndex)
+              })
+            }
 
-  window.addEventListener("scroll", revealOnScroll)
-  revealOnScroll() // Run once on load
+            trustScroll.addEventListener("scroll", updateActiveDot, { passive: true })
 
-  // Form interactive feedback
-  const inputs = document.querySelectorAll(".form-group input, .form-group select, .form-group textarea")
-  inputs.forEach((input) => {
-    input.addEventListener("focus", () => {
-      input.closest(".form-group").style.transform = "translateX(5px)"
-    })
-    input.addEventListener("blur", () => {
-      input.closest(".form-group").style.transform = "translateX(0)"
-    })
-  })
+            trustDots.forEach((dot) => {
+              dot.addEventListener("click", () => {
+                const index = parseInt(dot.dataset.trustDot)
+                const item = trustScroll.children[index]
+                if (item) {
+                  item.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" })
+                }
+              })
+            })
 
-  // Floating parallax for hero visual
-  document.addEventListener("mousemove", (e) => {
-    const visual = document.querySelector(".hero-visual")
-    if (!visual) return
-
-    const moveX = (e.clientX - window.innerWidth / 2) * 0.01
-    const moveY = (e.clientY - window.innerHeight / 2) * 0.01
-
-    const card1 = document.querySelector(".card-1")
-    const card2 = document.querySelector(".card-2")
-
-    if (card1) card1.style.transform = \`perspective(1000px) rotateY(\${-15 + moveX}deg) rotateX(\${10 + moveY}deg) translateZ(20px)\`
-    if (card2) card2.style.transform = \`perspective(1000px) rotateY(\${15 + moveX}deg) rotateX(\${-5 + moveY}deg) translateZ(-20px)\`
-  })
-})()
-</script>`}
+            trustNavBtns.forEach((btn) => {
+              btn.addEventListener("click", () => {
+                const direction = btn.dataset.trustNav === "prev" ? -1 : 1
+                const itemWidth = trustScroll.querySelector(".trust-item").offsetWidth + parseInt(getComputedStyle(trustScroll).gap)
+                trustScroll.scrollBy({ left: direction * itemWidth, behavior: "smooth" })
+              })
+            })
+          }
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>
         <Footer></Footer>
+        <div>
+          <div className="launch-container22">
+            <Script
+              html={`<style>
+@media (min-width: 768px) {
+.trust-scroll {
+  justify-content: center;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  overflow-x: visible;
+  scroll-snap-type: none;
+}
+.trust-item {
+  scroll-snap-align: none;
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -959,6 +1067,18 @@ opacity: 0.3;}}
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
+          .launch-thq-trust-nav-elm {
+            gap: var(--spacing-md);
+            display: none;
+            margin-top: var(--spacing-sm);
+            align-items: center;
+            justify-content: center;
+          }
+          .launch-thq-trust-dots-elm {
+            gap: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+          }
           .launch-container17 {
             display: none;
           }
@@ -970,6 +1090,14 @@ opacity: 0.3;}}
           }
           .launch-container20 {
             display: contents;
+          }
+          .launch-container22 {
+            display: contents;
+          }
+          @media (max-width: 767px) {
+            .launch-thq-trust-nav-elm {
+              display: flex;
+            }
           }
         `}
       </style>
