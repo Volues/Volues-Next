@@ -58,8 +58,8 @@ const Home = (props) => {
               </h1>
               <p className="hero-subtitle">
                 Volues delivers premium software solutions, from high-end
-                website design to complex enterprise cloud platforms. We
-                transform visionary ideas into scalable, futuristic realities.
+                website design to complex enterprise  platforms. We transform
+                visionary ideas into scalable, futuristic realities.
               </p>
               <div className="hero-actions">
                 <button className="btn-lg btn btn-primary">
