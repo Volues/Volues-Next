@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -66,18 +67,20 @@ const Projects = (props) => {
                     <span>View Case Studies</span>
                   </div>
                 </a>
-                <a href="#contact">
-                  <div className="btn-lg btn btn-outline">
-                    <span>Book Consultation</span>
-                  </div>
-                </a>
+                <Link href="/consultation">
+                  <a>
+                    <div className="projects-thq-btn-elm11 btn-lg btn btn-outline">
+                      <span>Book Consultation</span>
+                    </div>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="projects-hero-visual">
               <div className="projects-hero-mockup-wrapper">
                 <img
                   alt="Futuristic Dashboard Preview"
-                  src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="/website-1500h.jpg"
                   className="projects-hero-mockup"
                 />
                 <div className="projects-hero-floating-card projects-card-1">
@@ -825,6 +828,9 @@ const Projects = (props) => {
           .projects-container1 {
             width: 100%;
             min-height: 100vh;
+          }
+          .projects-thq-btn-elm11 {
+            text-decoration: none;
           }
           .projects-container2 {
             display: none;

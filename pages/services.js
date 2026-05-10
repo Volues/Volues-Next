@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -84,11 +85,13 @@ section {
                 technology brands.
               </p>
               <div className="services-hero-actions">
-                <a href="#">
-                  <div className="btn-lg btn btn-primary">
-                    <span>Book Consultation</span>
-                  </div>
-                </a>
+                <Link href="/consultation">
+                  <a>
+                    <div className="services-thq-btn-elm1 btn-lg btn btn-primary">
+                      <span>Book Consultation</span>
+                    </div>
+                  </a>
+                </Link>
                 <a href="#">
                   <div className="btn-lg btn btn-outline">
                     <span>View Projects</span>
@@ -916,6 +919,9 @@ section {
           }
           .services-thq-hero-subtitle-elm {
             color: var(--color-on-primary);
+          }
+          .services-thq-btn-elm1 {
+            text-decoration: none;
           }
           .services-thq-text-gradient-elm {
             background: linear-gradient(
