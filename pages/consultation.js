@@ -70,17 +70,15 @@ section {
                   <span>Book Consultation</span>
                 </div>
               </a>
-              <a href="#projects">
-                <div className="btn-lg btn-outline">
-                  <span>View Projects</span>
-                </div>
-              </a>
+              <div className="btn-lg btn-outline">
+                <span>View Projects</span>
+              </div>
             </div>
           </div>
           <div className="page-hero-visual1">
             <div className="page-dashboard-mockup">
               <img
-                src="https://images.pexels.com/photos/27141314/pexels-photo-27141314.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                src="/web2-1500w.webp"
                 alt="Futuristic Software Dashboard"
                 className="page-mockup-img"
               />
@@ -398,66 +396,6 @@ section {
             </div>
           </div>
         </section>
-        <section id="projects" className="projects">
-          <div className="projects-container">
-            <div className="projects-header">
-              <h2 className="section-title">Featured Projects</h2>
-              <p className="section-subtitle">
-                A glimpse into our portfolio of high-impact digital products.
-              </p>
-            </div>
-            <div className="page-projects-grid">
-              <div className="project-card">
-                <img
-                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 1"
-                  className="project-img"
-                />
-                <div className="project-overlay">
-                  <h3 className="card-text">Aether Platform</h3>
-                  <p className="section-content">Enterprise SaaS Dashboard</p>
-                  <span className="btn-link">View Case Study</span>
-                </div>
-              </div>
-              <div className="project-card">
-                <img
-                  src="https://images.pexels.com/photos/33433724/pexels-photo-33433724.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 2"
-                  className="project-img"
-                />
-                <div className="project-overlay">
-                  <h3 className="card-text">Nova FinTech</h3>
-                  <p className="section-content">Mobile Banking Ecosystem</p>
-                  <span className="btn-link">View Case Study</span>
-                </div>
-              </div>
-              <div className="project-card">
-                <img
-                  src="https://images.pexels.com/photos/27141313/pexels-photo-27141313.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 3"
-                  className="project-img"
-                />
-                <div className="project-overlay">
-                  <h3 className="card-text">Vertex Cloud</h3>
-                  <p className="section-content">Infrastructure Monitoring</p>
-                  <span className="btn-link">View Case Study</span>
-                </div>
-              </div>
-              <div className="project-card">
-                <img
-                  src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 4"
-                  className="project-img"
-                />
-                <div className="project-overlay">
-                  <h3 className="card-text">Lumina AI</h3>
-                  <p className="section-content">Predictive Analytics Tool</p>
-                  <span className="btn-link">View Case Study</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="why-choose">
           <div className="why-container">
             <div className="why-header">
@@ -506,142 +444,6 @@ section {
                   Reliability and performance metrics that satisfy the
                   world&apos;s largest firms.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="process">
-          <div className="process-container">
-            <div className="process-header">
-              <h2 className="section-title">Our Process</h2>
-              <p className="section-subtitle">
-                A methodical approach to digital excellence.
-              </p>
-            </div>
-            <div className="page-process-timeline">
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>01</span>
-                </div>
-                <h3 className="step-title">Discovery</h3>
-                <p className="section-content">
-                  Deep dive into your business goals, target audience, and
-                  project requirements.
-                </p>
-              </div>
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>02</span>
-                </div>
-                <h3 className="step-title">Strategy</h3>
-                <p className="section-content">
-                  Architecting the roadmap, selecting the stack, and defining
-                  the user journey.
-                </p>
-              </div>
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>03</span>
-                </div>
-                <h3 className="step-title">Design</h3>
-                <p className="section-content">
-                  Creating high-fidelity prototypes and immersive visual
-                  identities.
-                </p>
-              </div>
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>04</span>
-                </div>
-                <h3 className="step-title">Development</h3>
-                <p className="section-content">
-                  Agile engineering with continuous integration and quality
-                  assurance.
-                </p>
-              </div>
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>05</span>
-                </div>
-                <h3 className="step-title">Launch</h3>
-                <p className="section-content">
-                  Seamless deployment with rigorous performance testing and
-                  monitoring.
-                </p>
-              </div>
-              <div className="process-step">
-                <div className="page-step-number1">
-                  <span>06</span>
-                </div>
-                <h3 className="step-title">Support</h3>
-                <p className="section-content">
-                  Ongoing maintenance, optimization, and scaling as your
-                  business grows.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="testimonials">
-          <div className="testimonials-container">
-            <div className="testimonials-header">
-              <h2 className="section-title">Client Success</h2>
-              <p className="section-subtitle">
-                Trusted by visionary founders and technology leaders.
-              </p>
-            </div>
-            <div className="page-testimonials-grid">
-              <div className="page-testimonial-card">
-                <p className="section-content">
-                  &quot;Volues transformed our legacy infrastructure into a
-                  high-performance cloud ecosystem. Their attention to detail is
-                  unmatched.&quot;
-                </p>
-                <div className="testimonial-user">
-                  <div className="page-user-avatar">
-                    <span>SC</span>
-                  </div>
-                  <div className="user-info">
-                    <span className="page-user-name">Sarah Chen</span>
-                    <span className="page-user-role">CTO, Stellar Corp</span>
-                  </div>
-                </div>
-              </div>
-              <div className="page-testimonial-card">
-                <p className="section-content">
-                  &quot;The UI/UX design they delivered for our mobile app was
-                  beyond our expectations. Our user retention increased by
-                  40%.&quot;
-                </p>
-                <div className="testimonial-user">
-                  <div className="page-user-avatar">
-                    <span>MJ</span>
-                  </div>
-                  <div className="user-info">
-                    <span className="page-user-name">Marcus Jensen</span>
-                    <span className="page-user-role">
-                      Founder, Nexus Systems
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="page-testimonial-card">
-                <p className="section-content">
-                  &quot;Working with Volues feels like having an elite in-house
-                  engineering team. Professional, fast, and highly
-                  skilled.&quot;
-                </p>
-                <div className="testimonial-user">
-                  <div className="page-user-avatar">
-                    <span>DR</span>
-                  </div>
-                  <div className="user-info">
-                    <span className="page-user-name">David Rivera</span>
-                    <span className="page-user-role">
-                      Product Lead, Aura Digital
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
