@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -10,7 +11,7 @@ import Footer from '../components/footer'
 const Home = (props) => {
   return (
     <>
-      <div className="home-container1">
+      <div className="home-container10">
         <Head>
           <title>Premium Software Development Company</title>
           <meta
@@ -343,6 +344,572 @@ const Home = (props) => {
               A glimpse into the digital futures we have built for our partners.
             </p>
           </div>
+          <div className="home-container11">
+            <div className="home-container12">
+              <div className="home-container13">
+                <Script
+                  html={`<style>
+@media (prefers-reduced-motion: reduce) {
+.hero-mockup-phone-frame, .hero-mockup-float {
+  animation: none;
+}
+}
+</style>`}
+                ></Script>
+              </div>
+            </div>
+            <section className="hero-mockup1-hero-mockup">
+              <div className="hero-mockup1-hero-mockup-background">
+                <div className="hero-mockup1-hero-mockup-glow-1 hero-mockup1-hero-mockup-glow"></div>
+                <div className="hero-mockup1-hero-mockup-glow-2 hero-mockup1-hero-mockup-glow"></div>
+              </div>
+              <div className="hero-mockup1-hero-mockup-container">
+                <div className="hero-mockup1-hero-mockup-content">
+                  <div className="hero-mockup1-hero-mockup-badge">
+                    <span className="hero-mockup-badge-text">
+                      Next-Gen Software Solutions
+                    </span>
+                  </div>
+                  <h1 className="hero-title">
+                    Engineering the Future of Digital Products
+                  </h1>
+                  <p className="hero-subtitle">
+                    Volues specializes in high-end website design, mobile apps,
+                    and enterprise software engineering for startups and global
+                    enterprises ready to scale.
+                  </p>
+                  <div className="hero-mockup1-hero-mockup-actions">
+                    <Link href="/contact">
+                      <a>
+                        <div className="btn-lg btn btn-primary">
+                          <span>Book Consultation</span>
+                          <svg
+                            fill="none"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M5 12h14m-7-7l7 7l-7 7"></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                    <Link href="/projects">
+                      <a>
+                        <div className="btn-lg btn btn-outline">
+                          <span>View Projects</span>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="hero-mockup-visual">
+                  <div className="hero-mockup1-hero-mockup-phone-frame">
+                    <div className="hero-mockup-phone-inner">
+                      <div className="hero-mockup1-hero-mockup-app-ui">
+                        <div className="app-ui-header">
+                          <div className="app-ui-user">
+                            <div className="app-ui-avatar"></div>
+                            <div className="app-ui-user-info">
+                              <div className="app-ui-skeleton app-ui-skeleton-sm"></div>
+                              <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                            </div>
+                          </div>
+                          <div className="app-ui-icon-btn"></div>
+                        </div>
+                        <div className="app-ui-card-gradient app-ui-card">
+                          <div className="app-ui-skeleton app-ui-skeleton-sm"></div>
+                          <div className="app-ui-value">
+                            <span>$42,920.00</span>
+                          </div>
+                          <div className="app-ui-stats">
+                            <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                            <div className="app-ui-trend">
+                              <span>+12.5%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="app-ui-section-title">
+                          <span>Performance Analytics</span>
+                        </div>
+                        <div className="app-ui-chart-container">
+                          <div className="home-thq-app-ui-chart-bar-elm1 app-ui-chart-bar"></div>
+                          <div className="home-thq-app-ui-chart-bar-elm2 app-ui-chart-bar"></div>
+                          <div className="home-thq-app-ui-chart-bar-elm3 app-ui-chart-bar"></div>
+                          <div className="home-thq-app-ui-chart-bar-elm4 app-ui-chart-bar"></div>
+                          <div className="home-thq-app-ui-chart-bar-elm5 app-ui-chart-bar"></div>
+                          <div className="home-thq-app-ui-chart-bar-elm6 app-ui-chart-bar"></div>
+                        </div>
+                        <div className="app-ui-section-title">
+                          <span>Recent Activity</span>
+                        </div>
+                        <div className="app-ui-list">
+                          <div className="app-ui-list-item">
+                            <div className="app-ui-icon-box"></div>
+                            <div className="app-ui-item-content">
+                              <div className="app-ui-skeleton app-ui-skeleton-sm"></div>
+                              <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                            </div>
+                            <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                          </div>
+                          <div className="app-ui-list-item">
+                            <div className="app-ui-icon-box"></div>
+                            <div className="app-ui-item-content">
+                              <div className="app-ui-skeleton app-ui-skeleton-sm"></div>
+                              <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                            </div>
+                            <div className="app-ui-skeleton-xs app-ui-skeleton"></div>
+                          </div>
+                        </div>
+                        <div className="app-ui-navbar">
+                          <div className="active app-ui-nav-item"></div>
+                          <div className="app-ui-nav-item"></div>
+                          <div className="app-ui-nav-item"></div>
+                          <div className="app-ui-nav-item"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hero-mockup-float hero-mockup-float-1">
+                    <div className="float-card">
+                      <div className="float-card-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <rect
+                            x="3"
+                            y="4"
+                            rx="2"
+                            width="18"
+                            height="18"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                          <path d="M8 2v4"></path>
+                          <path d="M16 2v4"></path>
+                        </svg>
+                      </div>
+                      <div className="float-card-content">
+                        <div className="float-card-label">
+                          <span>Next Launch</span>
+                        </div>
+                        <div className="float-card-value">
+                          <span>Oct 24, 2026</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hero-mockup-float-2 hero-mockup-float">
+                    <div className="float-card">
+                      <div className="home-thq-float-card-icon-elm2 float-card-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                        </svg>
+                      </div>
+                      <div className="float-card-content">
+                        <div className="float-card-label">
+                          <span>Security</span>
+                        </div>
+                        <div className="float-card-value">
+                          <span>Enterprise Grade</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div className="home-container14">
+              <div className="home-container15">
+                <Script
+                  html={`<style>
+        @keyframes floatPhone {0%,100% {transform: rotateY(-15deg) rotateX(5deg) translateY(0);}
+50% {transform: rotateY(-10deg) rotateX(8deg) translateY(-20px);}}@keyframes floatCard {0%,100% {transform: translateY(0);}
+50% {transform: translateY(-15px);}}
+        </style> `}
+                ></Script>
+              </div>
+            </div>
+            <div className="home-container16">
+              <div className="home-container17">
+                <Script
+                  html={`<script defer data-name="hero-mockup-interactions">
+(function(){
+  const heroSection = document.querySelector(".hero-mockup")
+  const glows = document.querySelectorAll(".hero-mockup-glow")
+  const phoneFrame = document.querySelector(".hero-mockup-phone-frame")
+
+  // Subtle parallax on mouse move
+  if (window.innerWidth > 991) {
+    heroSection.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e
+      const xPos = (clientX / window.innerWidth - 0.5) * 30
+      const yPos = (clientY / window.innerHeight - 0.5) * 30
+
+      glows.forEach((glow, index) => {
+        const factor = (index + 1) * 0.5
+        glow.style.transform = \`translate(\${xPos * factor}px, \${yPos * factor}px)\`
+      })
+
+      if (phoneFrame) {
+        const rotateY = -15 + xPos * 0.2
+        const rotateX = 5 + yPos * 0.2
+        phoneFrame.style.transform = \`rotateY(\${rotateY}deg) rotateX(\${rotateX}deg)\`
+      }
+    })
+  }
+
+  // Intersection Observer for reveal animation
+  const observerOptions = {
+    threshold: 0.1,
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible")
+
+        // Animate chart bars when visible
+        const bars = entry.target.querySelectorAll(".app-ui-chart-bar")
+        bars.forEach((bar, i) => {
+          const originalHeight = bar.style.height
+          bar.style.height = "0"
+          setTimeout(() => {
+            bar.style.height = originalHeight
+          }, 400 + i * 100)
+        })
+      }
+    })
+  }, observerOptions)
+
+  observer.observe(heroSection)
+})()
+</script>`}
+                ></Script>
+              </div>
+            </div>
+          </div>
+          <div className="home-container18">
+            <section className="hero-mockup">
+              <div className="hero-mockup-background">
+                <div className="hero-mockup-glow-1 hero-mockup-glow"></div>
+                <div className="hero-mockup-glow-2 hero-mockup-glow"></div>
+              </div>
+              <div className="hero-mockup-container">
+                <div className="hero-mockup-content">
+                  <div className="hero-mockup-badge">
+                    <span className="hero-mockup-badge-dot"></span>
+                    <span>
+                      {' '}
+                      Next-Gen Software Solutions
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                  <h1 className="hero-title">
+                    Engineering the Future of Digital Products
+                  </h1>
+                  <p className="hero-subtitle">
+                    Volues empowers modern enterprises with premium software
+                    engineering, high-end UI/UX design, and scalable cloud
+                    platforms tailored for the next generation of technology.
+                  </p>
+                  <div className="hero-mockup-actions">
+                    <Link href="/contact">
+                      <a>
+                        <div className="btn-lg btn btn-primary">
+                          <span>
+                            {' '}
+                            Book Consultation
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: ' ',
+                              }}
+                            />
+                          </span>
+                          <svg
+                            fill="none"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M5 12h14m-7-7l7 7l-7 7"></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                    <Link href="/projects">
+                      <a>
+                        <div className="btn-lg btn btn-outline">
+                          <span>View Projects</span>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="hero-mockup-visual-wrapper">
+                  <div className="hero-mockup-visual-frame">
+                    <div className="hero-mockup-phone-frame">
+                      <div className="hero-mockup-phone-screen">
+                        <div className="hero-mockup-app-ui">
+                          <header className="hero-mockup-app-header">
+                            <div className="hero-mockup-app-profile"></div>
+                            <div className="hero-mockup-app-title-group">
+                              <span className="hero-mockup-app-welcome">
+                                Welcome back,
+                              </span>
+                              <span className="hero-mockup-app-user">
+                                Alex Volues
+                              </span>
+                            </div>
+                          </header>
+                          <div className="hero-mockup-app-stats">
+                            <div className="hero-mockup-app-card hero-mockup-app-card-blue">
+                              <span className="hero-mockup-app-card-label">
+                                Revenue
+                              </span>
+                              <span className="hero-mockup-app-card-value">
+                                $24,500
+                              </span>
+                              <div className="hero-mockup-app-mini-chart">
+                                <svg
+                                  viewBox="0 0 100 40"
+                                  preserveAspectRatio="none"
+                                >
+                                  <path
+                                    d="M0 40 Q 25 10, 50 30 T 100 10"
+                                    fill="none"
+                                    stroke="white"
+                                    strokeWidth="3"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div className="hero-mockup-app-card hero-mockup-app-card-white">
+                              <span className="hero-mockup-app-card-label">
+                                Growth
+                              </span>
+                              <span className="hero-mockup-app-card-value">
+                                +12.5%
+                              </span>
+                              <div className="hero-mockup-app-mini-chart">
+                                <svg
+                                  viewBox="0 0 100 40"
+                                  preserveAspectRatio="none"
+                                >
+                                  <path
+                                    d="M0 30 Q 20 20, 40 35 T 80 15 T 100 25"
+                                    fill="none"
+                                    stroke="var(--color-primary)"
+                                    strokeWidth="3"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="hero-mockup-app-main-chart">
+                            <div className="hero-mockup-app-chart-header">
+                              <span className="hero-mockup-app-section-title">
+                                Performance Analytics
+                              </span>
+                              <div className="hero-mockup-app-chart-icons">
+                                <svg
+                                  fill="none"
+                                  width="16"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  height="16"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                >
+                                  <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                  <path d="m19 9l-5 5l-4-4l-3 3"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div className="hero-mockup-app-chart-bars">
+                              <div className="home-thq-hero-mockup-app-bar-elm1 hero-mockup-app-bar"></div>
+                              <div className="home-thq-hero-mockup-app-bar-elm2 hero-mockup-app-bar"></div>
+                              <div className="home-thq-hero-mockup-app-bar-elm3 hero-mockup-app-bar"></div>
+                              <div className="home-thq-hero-mockup-app-bar-elm4 hero-mockup-app-bar"></div>
+                              <div className="home-thq-hero-mockup-app-bar-elm5 hero-mockup-app-bar"></div>
+                              <div className="home-thq-hero-mockup-app-bar-elm6 hero-mockup-app-bar"></div>
+                            </div>
+                          </div>
+                          <div className="hero-mockup-app-list">
+                            <span className="hero-mockup-app-section-title">
+                              Recent Activity
+                            </span>
+                            <div className="hero-mockup-app-list-item">
+                              <div className="hero-mockup-app-item-icon"></div>
+                              <div className="hero-mockup-app-item-text">
+                                <span className="hero-mockup-app-item-title">
+                                  Cloud Sync
+                                </span>
+                                <span className="hero-mockup-app-item-sub">
+                                  Completed 2m ago
+                                </span>
+                              </div>
+                            </div>
+                            <div className="hero-mockup-app-list-item">
+                              <div className="hero-mockup-app-item-icon"></div>
+                              <div className="hero-mockup-app-item-text">
+                                <span className="hero-mockup-app-item-title">
+                                  Security Patch
+                                </span>
+                                <span className="hero-mockup-app-item-sub">
+                                  Deployed successfully
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="hero-mockup-floating-card hero-mockup-floating-card-1">
+                      <div className="hero-mockup-floating-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="var(--color-primary)"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                        </svg>
+                      </div>
+                      <div className="hero-mockup-floating-text">
+                        <strong>Security First</strong>
+                        <span>Enterprise-grade encryption</span>
+                      </div>
+                    </div>
+                    <div className="hero-mockup-floating-card-2 hero-mockup-floating-card">
+                      <div className="hero-mockup-floating-icon">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="var(--color-secondary)"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275z"></path>
+                        </svg>
+                      </div>
+                      <div className="hero-mockup-floating-text">
+                        <strong>AI Powered</strong>
+                        <span>Smart automation engine</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div className="home-container19">
+              <div className="home-container20">
+                <Script
+                  html={`<style>
+        @keyframes float {0%,100% {transform: translateY(0);}
+50% {transform: translateY(-20px);}}
+        </style> `}
+                ></Script>
+              </div>
+            </div>
+            <div className="home-container21">
+              <div className="home-container22">
+                <Script
+                  html={`<script defer data-name="hero-mockup-interactions">
+(function(){
+  const heroSection = document.querySelector(".hero-mockup")
+  const visualFrame = document.querySelector(".hero-mockup-visual-frame")
+  const bars = document.querySelectorAll(".hero-mockup-app-bar")
+
+  if (heroSection && visualFrame) {
+    heroSection.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e
+      const { innerWidth, innerHeight } = window
+
+      const xPos = (clientX / innerWidth - 0.5) * 20
+      const yPos = (clientY / innerHeight - 0.5) * 20
+
+      visualFrame.style.transform = \`rotateY(\${xPos - 15}deg) rotateX(\${-yPos + 5}deg)\`
+    })
+
+    heroSection.addEventListener("mouseleave", () => {
+      visualFrame.style.transform = \`rotateY(-15deg) rotateX(5deg)\`
+    })
+  }
+
+  const animateBars = () => {
+    bars.forEach((bar) => {
+      const targetHeight = bar.style.height
+      bar.style.height = "0%"
+      setTimeout(() => {
+        bar.style.height = targetHeight
+      }, 500)
+    })
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateBars()
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+
+  if (heroSection) {
+    observer.observe(heroSection)
+  }
+})()
+</script>`}
+                ></Script>
+              </div>
+            </div>
+          </div>
           <div className="home-thq-projects-masonry-elm">
             <div data-mockup="1" className="mockup-card">
               <div className="mockup-visual-wrapper">
@@ -354,8 +921,8 @@ const Home = (props) => {
                     </div>
                   </div>
                   <img
-                    alt="Enterprise Dashboard Interface"
-                    src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="White Analytics Dashboard with Charts and Data Visualizations"
+                    src="https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     className="mockup-main"
                   />
                   <div className="card-2 floating-card">
@@ -646,8 +1213,8 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <div className="home-container2">
-          <div className="home-container3">
+        <div className="home-container23">
+          <div className="home-container24">
             <Script
               html={`<style>
         @keyframes floatMockup {
@@ -702,8 +1269,8 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
-        <div className="home-container4">
-          <div className="home-container5">
+        <div className="home-container25">
+          <div className="home-container26">
             <Script
               html={`<script defer data-name="volues-animations">
 (function(){
@@ -768,9 +1335,85 @@ if (partnersScroller) {
       </div>
       <style jsx>
         {`
-          .home-container1 {
+          .home-container10 {
             width: 100%;
             min-height: 100vh;
+          }
+          .home-container11 {
+            display: contents;
+          }
+          .home-container12 {
+            display: none;
+          }
+          .home-container13 {
+            display: contents;
+          }
+          .home-thq-app-ui-chart-bar-elm1 {
+            height: 40%;
+          }
+          .home-thq-app-ui-chart-bar-elm2 {
+            height: 70%;
+          }
+          .home-thq-app-ui-chart-bar-elm3 {
+            height: 55%;
+          }
+          .home-thq-app-ui-chart-bar-elm4 {
+            height: 90%;
+          }
+          .home-thq-app-ui-chart-bar-elm5 {
+            height: 65%;
+          }
+          .home-thq-app-ui-chart-bar-elm6 {
+            height: 80%;
+          }
+          .home-thq-float-card-icon-elm2 {
+            color: var(--color-on-accent);
+            background: var(--color-accent);
+          }
+          .home-container14 {
+            display: none;
+          }
+          .home-container15 {
+            display: contents;
+          }
+          .home-container16 {
+            display: none;
+          }
+          .home-container17 {
+            display: contents;
+          }
+          .home-container18 {
+            display: contents;
+          }
+          .home-thq-hero-mockup-app-bar-elm1 {
+            height: 60%;
+          }
+          .home-thq-hero-mockup-app-bar-elm2 {
+            height: 85%;
+          }
+          .home-thq-hero-mockup-app-bar-elm3 {
+            height: 45%;
+          }
+          .home-thq-hero-mockup-app-bar-elm4 {
+            height: 70%;
+          }
+          .home-thq-hero-mockup-app-bar-elm5 {
+            height: 95%;
+          }
+          .home-thq-hero-mockup-app-bar-elm6 {
+            height: 55%;
+          }
+          .home-container19 {
+            display: none;
+          }
+          .home-container20 {
+            display: contents;
+          }
+          .home-container21 {
+            display: none;
+          }
+          .home-container22 {
+            display: contents;
           }
           .home-thq-projects-masonry-elm {
             gap: var(--spacing-2xl);
@@ -779,16 +1422,16 @@ if (partnersScroller) {
             max-width: var(--content-max-width);
             grid-template-columns: repeat(3, 1fr);
           }
-          .home-container2 {
+          .home-container23 {
             display: none;
           }
-          .home-container3 {
+          .home-container24 {
             display: contents;
           }
-          .home-container4 {
+          .home-container25 {
             display: none;
           }
-          .home-container5 {
+          .home-container26 {
             display: contents;
           }
           @media (max-width: 991px) {
