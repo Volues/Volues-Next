@@ -2035,6 +2035,7 @@
   color: var(--color-primary);
   display: block;
   font-size: var(--font-size-3xl);
+  transition: text-shadow 0.3s ease;
   font-family: var(--font-family-heading);
   font-weight: 800;
   margin-bottom: var(--spacing-xs);
@@ -7105,6 +7106,10 @@
  
 .mockup-info  .btn-link:hover {
   color: var(--color-primary);
+}
+ 
+.home-stat-number.counting {
+  animation: countUpGlow 2s ease-in-out;
 }
  
 .Headings {

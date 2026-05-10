@@ -698,6 +698,17 @@ const Home = (props) => {
             transform: translateX(-50%);
           }
         }
+        @keyframes countUpGlow {
+          0% {
+            text-shadow: 0 0 0px rgba(0, 163, 198, 0);
+          }
+          50% {
+            text-shadow: 0 0 20px rgba(0, 163, 198, 0.6);
+          }
+          100% {
+            text-shadow: 0 0 0px rgba(0, 163, 198, 0);
+          }
+        }
       </style>`}
             ></Script>
           </div>
@@ -705,62 +716,60 @@ const Home = (props) => {
         <div className="home-container4">
           <div className="home-container5">
             <Script
-              html={`<script defer data-name="volues-animations">
-(function(){
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const revealOnScroll = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      
-      if (entry.target.classList.contains('stat-number')) {
-        animateValue(entry.target);
-      }
-    }
-  });
-}, observerOptions);
-
-function animateValue(obj) {
-  const target = parseInt(obj.getAttribute('data-target'));
-  const duration = 2000;
-  let startTimestamp = null;
-  
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    const current = Math.floor(progress * target);
-    
-    if (obj.innerText.includes('%')) obj.innerText = current + '%';
-    else if (obj.innerText.includes('+')) obj.innerText = current + '+';
-    else if (obj.innerText.includes('ms')) obj.innerText = current + 'ms';
-    else obj.innerText = current;
-
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
-
-document.querySelectorAll('.service-card, .project-item, .step-card, .stat-number').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(30px)';
-  el.style.transition = 'all 0.6s ease-out';
-  revealOnScroll.observe(el);
-});
-
-const partnersScroller = document.querySelector('.partners-scroller');
-if (partnersScroller) {
-  const clone = partnersScroller.innerHTML;
-  partnersScroller.innerHTML += clone;
-}
-})()
-</script>`}
+              html={`<script>
+        ;(function () {
+          const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          }
+          const revealOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1"
+                entry.target.style.transform = "translateY(0)"
+                if (entry.target.classList.contains("stat-number") || entry.target.classList.contains("home-stat-number")) {
+                  animateValue(entry.target)
+                }
+              }
+            })
+          }, observerOptions)
+          function animateValue(obj) {
+            const target = parseInt(obj.getAttribute("data-target"))
+            const duration = 2000
+            let startTimestamp = null
+            const suffix = obj.innerText.replace(/[0-9]/g, "")
+            obj.classList.add("counting")
+            const step = (timestamp) => {
+              if (!startTimestamp) startTimestamp = timestamp
+              const progress = Math.min((timestamp - startTimestamp) / duration, 1)
+              const easeProgress = 1 - Math.pow(1 - progress, 3)
+              const current = Math.floor(easeProgress * target)
+              obj.innerText = current + suffix
+              if (progress < 1) {
+                window.requestAnimationFrame(step)
+              } else {
+                obj.innerText = target + suffix
+                setTimeout(() => obj.classList.remove("counting"), 500)
+              }
+            }
+            window.requestAnimationFrame(step)
+          }
+          document.querySelectorAll(".service-card, .project-item, .step-card, .stat-number").forEach((el) => {
+            el.style.opacity = "0"
+            el.style.transform = "translateY(30px)"
+            el.style.transition = "all 0.6s ease-out"
+            revealOnScroll.observe(el)
+          })
+          document.querySelectorAll(".home-stat-number").forEach((el) => {
+            revealOnScroll.observe(el)
+          })
+          const partnersScroller = document.querySelector(".partners-scroller")
+          if (partnersScroller) {
+            const clone = partnersScroller.innerHTML
+            partnersScroller.innerHTML += clone
+          }
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>
