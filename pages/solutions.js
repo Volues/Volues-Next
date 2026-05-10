@@ -644,7 +644,7 @@ section {
               <div className="tech-badges">
                 <span className="tech-badge">Figma</span>
                 <span className="tech-badge">Framer</span>
-                <span className="tech-badge">TeleportHQ</span>
+                <span className="tech-badge">VS  Code</span>
               </div>
             </div>
           </div>
@@ -743,7 +743,7 @@ section {
                 </div>
               </div>
               <div className="project-info">
-                <h4 className="solutions1-project-title">NexGen ERP</h4>
+                <h4 className="solutions1-project-title">Neos ERP</h4>
                 <p className="project-type">Enterprise Software</p>
               </div>
             </div>
