@@ -343,48 +343,106 @@ const Home = (props) => {
               A glimpse into the digital futures we have built for our partners.
             </p>
           </div>
-          <div className="projects-masonry">
-            <div className="tall project-item">
-              <img
-                alt="Architecture Project"
-                src="https://images.pexels.com/photos/26521549/pexels-photo-26521549.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              />
-              <div className="project-overlay">
+          <div className="home-thq-projects-masonry-elm">
+            <div data-mockup="1" className="mockup-card">
+              <div className="mockup-visual-wrapper">
+                <div className="dashboard-mockup hero-mockup-scale">
+                  <div className="card-1 floating-card">
+                    <div className="card-glass">
+                      <div className="pulse-dot"></div>
+                      <span>System Active</span>
+                    </div>
+                  </div>
+                  <img
+                    alt="Enterprise Dashboard Interface"
+                    src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    className="mockup-main"
+                  />
+                  <div className="card-2 floating-card">
+                    <div className="card-glass">
+                      <div className="stat-row">
+                        <span className="home-stat-label">Uptime</span>
+                        <span className="stat-value">99.9%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mockup-info">
                 <span className="project-category">Enterprise UI</span>
-                <h3 className="section-subtitle">teleos Core Dashboard</h3>
+                <h3 className="section-subtitle">Teleos Core Dashboard</h3>
+                <p className="mockup-description">
+                  Real-time analytics platform with predictive insights and
+                  enterprise-grade security architecture.
+                </p>
                 <button className="btn-link">View Case Study</button>
               </div>
             </div>
-            <div className="project-item">
-              <img
-                alt="Digital Platform"
-                src="https://images.pexels.com/photos/18375373/pexels-photo-18375373.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              />
-              <div className="project-overlay">
+            <div data-mockup="2" className="mockup-card">
+              <div className="mockup-visual-wrapper">
+                <div className="dashboard-mockup hero-mockup-scale">
+                  <img
+                    alt="Cloud Platform Interface"
+                    src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    className="mockup-main"
+                  />
+                  <div className="card-1 floating-card">
+                    <div className="card-glass">
+                      <div className="pulse-dot"></div>
+                      <span>Live Sync</span>
+                    </div>
+                  </div>
+                  <div className="card-2 floating-card">
+                    <div className="card-glass">
+                      <div className="stat-row">
+                        <span className="home-stat-label">Nodes</span>
+                        <span className="stat-value">12K+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mockup-info">
                 <span className="project-category">Cloud Platform</span>
                 <h3 className="section-subtitle">Aether Network</h3>
+                <p className="mockup-description">
+                  Distributed cloud infrastructure with auto-scaling and
+                  zero-downtime deployment pipelines.
+                </p>
                 <button className="btn-link">View Case Study</button>
               </div>
             </div>
-            <div className="project-item">
-              <img
-                alt="Mobile App Interface"
-                src="https://images.pexels.com/photos/27674358/pexels-photo-27674358.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              />
-              <div className="project-overlay">
+            <div data-mockup="3" className="mockup-card">
+              <div className="mockup-visual-wrapper">
+                <div className="dashboard-mockup hero-mockup-scale">
+                  <img
+                    alt="Mobile Finance Application"
+                    src="https://images.pexels.com/photos/28682346/pexels-photo-28682346.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    className="mockup-main"
+                  />
+                  <div className="card-1 floating-card">
+                    <div className="card-glass">
+                      <div className="pulse-dot"></div>
+                      <span>Secure</span>
+                    </div>
+                  </div>
+                  <div className="card-2 floating-card">
+                    <div className="card-glass">
+                      <div className="stat-row">
+                        <span className="home-stat-label">Users</span>
+                        <span className="stat-value">2.4M</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mockup-info">
                 <span className="project-category">Mobile Design</span>
                 <h3 className="section-subtitle">Veloce Finance</h3>
-                <button className="btn-link">View Case Study</button>
-              </div>
-            </div>
-            <div className="tall project-item">
-              <img
-                alt="System Interface"
-                src="https://images.pexels.com/photos/3137043/pexels-photo-3137043.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              />
-              <div className="project-overlay">
-                <span className="project-category">SaaS Solution</span>
-                <h3 className="section-subtitle">Orbit Analytics</h3>
+                <p className="mockup-description">
+                  Next-gen mobile banking experience with biometric
+                  authentication and instant transfers.
+                </p>
                 <button className="btn-link">View Case Study</button>
               </div>
             </div>
@@ -714,6 +772,13 @@ if (partnersScroller) {
             width: 100%;
             min-height: 100vh;
           }
+          .home-thq-projects-masonry-elm {
+            gap: var(--spacing-2xl);
+            margin: 0 auto;
+            display: grid;
+            max-width: var(--content-max-width);
+            grid-template-columns: repeat(3, 1fr);
+          }
           .home-container2 {
             display: none;
           }
@@ -725,6 +790,18 @@ if (partnersScroller) {
           }
           .home-container5 {
             display: contents;
+          }
+          @media (max-width: 991px) {
+            .home-thq-projects-masonry-elm {
+              gap: var(--spacing-xl);
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+          @media (max-width: 767px) {
+            .home-thq-projects-masonry-elm {
+              gap: var(--spacing-xl);
+              grid-template-columns: 1fr;
+            }
           }
         `}
       </style>

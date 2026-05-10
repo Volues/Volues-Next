@@ -100,7 +100,7 @@ section {
               <div className="glass-dashboard">
                 <img
                   alt="Volues Enterprise Dashboard"
-                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=1500"
                   className="dashboard-img"
                 />
                 <div className="services-card-1 services-floating-card">
@@ -366,8 +366,8 @@ section {
             <div className="masonry-grid">
               <div className="masonry-item">
                 <img
-                  alt="FinTech Dashboard"
-                  src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Mobile App UI Mockup"
+                  src="https://images.pexels.com/photos/8066712/pexels-photo-8066712.png?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="masonry-img"
                 />
                 <div className="masonry-overlay">

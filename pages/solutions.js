@@ -65,10 +65,10 @@ section {
               scales with your ambition.
             </p>
             <div className="hero-cta-group">
-              <button className="btn btn-primary btn-lg">
+              <button className="btn-lg btn btn-primary">
                 Book Consultation
               </button>
-              <button className="btn btn-lg btn-outline">
+              <button className="btn-lg btn btn-outline">
                 Explore Projects
               </button>
             </div>
@@ -110,16 +110,16 @@ section {
                         className="solutions-thq-chart-svg-elm"
                       >
                         <polyline
-                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
                           fill="none"
+                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
                           stroke="#00A3C6"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         ></polyline>
                         <polyline
-                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
                           fill="url(#grad1)"
+                          points="0,50 30,40 60,45 90,25 120,30 150,15 180,10 200,5"
                           stroke="none"
                           opacity="0.2"
                         ></polyline>
@@ -127,8 +127,8 @@ section {
                           <linearGradient
                             id="grad1"
                             x1="0%"
-                            y1="0%"
                             x2="0%"
+                            y1="0%"
                             y2="100%"
                           >
                             <stop
@@ -173,23 +173,23 @@ section {
                         className="solutions-thq-gauge-svg-elm"
                       >
                         <circle
+                          r="40"
                           cx="50"
                           cy="50"
-                          r="40"
                           fill="none"
                           stroke="#E5E7EB"
                           strokeWidth="8"
                         ></circle>
                         <circle
+                          r="40"
                           cx="50"
                           cy="50"
-                          r="40"
                           fill="none"
                           stroke="#00A3C6"
                           strokeWidth="8"
+                          strokeLinecap="round"
                           strokeDasharray="220"
                           strokeDashoffset="8"
-                          strokeLinecap="round"
                           className="solutions-thq-gauge-progress-elm"
                         ></circle>
                       </svg>
@@ -220,15 +220,15 @@ section {
                   </div>
                 </div>
               </div>
-              <div className="solutions1-floating-card solutions1-card-1">
+              <div className="solutions1-card-1 solutions1-floating-card">
                 <div className="card-icon-wrapper">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -241,15 +241,15 @@ section {
                   <span className="card-value">Protected</span>
                 </div>
               </div>
-              <div className="solutions1-floating-card solutions1-card-2">
+              <div className="solutions1-card-2 solutions1-floating-card">
                 <div className="card-icon-wrapper">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -374,12 +374,12 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -409,19 +409,19 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  <line x1="12" x2="12" y1="22.08" y2="12"></line>
                 </svg>
               </div>
               <h3 className="card-title">Business Automation Systems</h3>
@@ -444,20 +444,20 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  <rect x="2" y="2" rx="2" ry="2" width="20" height="8"></rect>
+                  <rect x="2" y="14" rx="2" ry="2" width="20" height="8"></rect>
+                  <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                  <line x1="6" x2="6.01" y1="18" y2="18"></line>
                 </svg>
               </div>
               <h3 className="card-title">Enterprise Software Solutions</h3>
@@ -480,18 +480,18 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  <rect x="5" y="2" rx="2" ry="2" width="14" height="20"></rect>
+                  <line x1="12" x2="12.01" y1="18" y2="18"></line>
                 </svg>
               </div>
               <h3 className="card-title">Mobile App Ecosystems</h3>
@@ -514,12 +514,12 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -549,12 +549,12 @@ section {
             <div className="solution-item">
               <div className="solution-icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -762,12 +762,12 @@ section {
             <div className="solutions1-project-card">
               <div className="project-media">
                 <img
-                  src="https://images.pexels.com/photos/34803968/pexels-photo-34803968.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Enterprise Platform"
+                  src="https://images.pexels.com/photos/34803968/pexels-photo-34803968.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="project-img"
                 />
                 <div className="solutions1-project-overlay">
-                  <button className="btn btn-primary btn-sm">
+                  <button className="btn-sm btn btn-primary">
                     View Case Study
                   </button>
                 </div>
@@ -780,12 +780,12 @@ section {
             <div className="solutions1-project-card">
               <div className="project-media">
                 <img
-                  src="https://images.pexels.com/photos/8022861/pexels-photo-8022861.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Fintech App"
+                  src="https://images.pexels.com/photos/8022861/pexels-photo-8022861.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="project-img"
                 />
                 <div className="solutions1-project-overlay">
-                  <button className="btn btn-primary btn-sm">
+                  <button className="btn-sm btn btn-primary">
                     View Case Study
                   </button>
                 </div>
@@ -900,7 +900,7 @@ section {
               Join the world&apos;s most innovative companies and start your
               project with Volues today.
             </p>
-            <button className="btn btn-accent btn-xl">Start a Project</button>
+            <button className="btn-accent btn btn-xl">Start a Project</button>
           </div>
         </section>
         <div className="solutions-container13">

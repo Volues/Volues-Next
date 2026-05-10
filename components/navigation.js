@@ -77,6 +77,34 @@ const Navigation = (props) => {
                     </a>
                   </Link>
                 </li>
+                <div
+                  data-thq="thq-dropdown"
+                  className="navigation-thq-dropdown1"
+                >
+                  <div
+                    data-thq="thq-dropdown-toggle"
+                    className="navigation-thq-dropdown-toggle1"
+                  >
+                    <span>More</span>
+                    <div
+                      data-thq="thq-dropdown-arrow"
+                      className="navigation-thq-dropdown-arrow1"
+                    >
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        className="navigation-icon10"
+                      >
+                        <path d="M426 726v-428l214 214z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <ul
+                    data-thq="thq-dropdown-list"
+                    className="navigation-thq-dropdown-list1"
+                  >
+                    <li className="navigation-item"></li>
+                  </ul>
+                </div>
               </ul>
             </div>
             <div className="navigation-actions">
@@ -220,6 +248,28 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
+              <div data-thq="thq-dropdown" className="navigation-thq-dropdown2">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  className="navigation-thq-dropdown-toggle2"
+                >
+                  <span>More</span>
+                  <div
+                    data-thq="thq-dropdown-arrow"
+                    className="navigation-thq-dropdown-arrow2"
+                  >
+                    <svg viewBox="0 0 1024 1024" className="navigation-icon23">
+                      <path d="M426 726v-428l214 214z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <ul
+                  data-thq="thq-dropdown-list"
+                  className="navigation-thq-dropdown-list2"
+                >
+                  <li className="navigation-overlay-item"></li>
+                </ul>
+              </div>
             </ul>
             <div className="navigation-overlay-footer">
               <Link href="/contact">
@@ -318,12 +368,72 @@ const Navigation = (props) => {
           .navigation-thq-navigation-link-elm3 {
             text-decoration: none;
           }
+          .navigation-thq-dropdown1 {
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 8px;
+            position: relative;
+            border-color: rgba(0, 0, 0, 0.45);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+          }
+          .navigation-thq-dropdown-toggle1 {
+            gap: 4px;
+            display: inline-flex;
+            align-items: center;
+          }
+          .navigation-thq-dropdown-arrow1 {
+            transition: 0.3s;
+          }
+          .navigation-icon10 {
+            width: 18px;
+            height: 18px;
+          }
+          .navigation-thq-dropdown-list1 {
+            display: none;
+            z-index: 100;
+            position: absolute;
+            min-width: 100%;
+            flex-direction: column;
+            list-style-type: none;
+          }
           .navigation-image2 {
             width: 80px;
             height: auto;
             display: block;
             object-fit: contain;
             vertical-align: middle;
+          }
+          .navigation-thq-dropdown2 {
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 8px;
+            position: relative;
+            border-color: rgba(0, 0, 0, 0.45);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+          }
+          .navigation-thq-dropdown-toggle2 {
+            gap: 4px;
+            display: inline-flex;
+            align-items: center;
+          }
+          .navigation-thq-dropdown-arrow2 {
+            transition: 0.3s;
+          }
+          .navigation-icon23 {
+            width: 18px;
+            height: 18px;
+          }
+          .navigation-thq-dropdown-list2 {
+            display: none;
+            z-index: 100;
+            position: absolute;
+            min-width: 100%;
+            flex-direction: column;
+            list-style-type: none;
           }
           .navigation-container2 {
             display: none;

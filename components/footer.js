@@ -214,6 +214,7 @@ const Footer = (props) => {
                       </Link>
                     </li>
                     <li className="footer-nav-item"></li>
+                    <li className="footer-nav-item"></li>
                   </ul>
                 </div>
                 <div className="footer-newsletter-column footer-nav-group">
