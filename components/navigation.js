@@ -75,42 +75,6 @@ const Navigation = (props) => {
                     </a>
                   </Link>
                 </li>
-                <div
-                  data-thq="thq-dropdown"
-                  className="navigation-thq-dropdown1"
-                >
-                  <div
-                    data-thq="thq-dropdown-toggle"
-                    className="navigation-thq-dropdown-toggle1"
-                  >
-                    <span>More</span>
-                    <div
-                      data-thq="thq-dropdown-arrow"
-                      className="navigation-thq-dropdown-arrow1"
-                    >
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        className="navigation-icon10"
-                      >
-                        <path d="M426 726v-428l214 214z"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <ul
-                    data-thq="thq-dropdown-list"
-                    className="navigation-thq-dropdown-list1"
-                  >
-                    <li className="navigation-item">
-                      <Link href="/solutions">
-                        <a>
-                          <div className="navigation-link">
-                            <span>Solutions</span>
-                          </div>
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
               </ul>
             </div>
             <div className="navigation-actions">
@@ -118,28 +82,6 @@ const Navigation = (props) => {
                 <a>
                   <div className="btn-md btn navigation-cta btn-primary">
                     <span>Start a Project</span>
-                    <svg
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M5 12h14m-7-7l7 7l-7 7"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </Link>
-              <Link href="/solutions">
-                <a>
-                  <div className="btn-md btn navigation-cta btn-primary">
-                    <span>Solutions</span>
                     <svg
                       width="24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -283,24 +225,24 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
-              <div data-thq="thq-dropdown" className="navigation-thq-dropdown2">
+              <div data-thq="thq-dropdown" className="navigation-thq-dropdown">
                 <div
                   data-thq="thq-dropdown-toggle"
-                  className="navigation-thq-dropdown-toggle2"
+                  className="navigation-thq-dropdown-toggle"
                 >
                   <span>More</span>
                   <div
                     data-thq="thq-dropdown-arrow"
-                    className="navigation-thq-dropdown-arrow2"
+                    className="navigation-thq-dropdown-arrow"
                   >
-                    <svg viewBox="0 0 1024 1024" className="navigation-icon25">
+                    <svg viewBox="0 0 1024 1024" className="navigation-icon21">
                       <path d="M426 726v-428l214 214z"></path>
                     </svg>
                   </div>
                 </div>
                 <ul
                   data-thq="thq-dropdown-list"
-                  className="navigation-thq-dropdown-list2"
+                  className="navigation-thq-dropdown-list"
                 >
                   <li className="navigation-overlay-item">
                     <Link href="/solutions">
@@ -408,36 +350,6 @@ const Navigation = (props) => {
             object-fit: contain;
             vertical-align: middle;
           }
-          .navigation-thq-dropdown1 {
-            cursor: pointer;
-            display: inline-block;
-            padding: 4px 8px;
-            position: relative;
-            border-color: rgba(0, 0, 0, 0.45);
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
-          }
-          .navigation-thq-dropdown-toggle1 {
-            gap: 4px;
-            display: inline-flex;
-            align-items: center;
-          }
-          .navigation-thq-dropdown-arrow1 {
-            transition: 0.3s;
-          }
-          .navigation-icon10 {
-            width: 18px;
-            height: 18px;
-          }
-          .navigation-thq-dropdown-list1 {
-            display: none;
-            z-index: 100;
-            position: absolute;
-            min-width: 100%;
-            flex-direction: column;
-            list-style-type: none;
-          }
           .navigation-image2 {
             width: 80px;
             height: auto;
@@ -445,7 +357,7 @@ const Navigation = (props) => {
             object-fit: contain;
             vertical-align: middle;
           }
-          .navigation-thq-dropdown2 {
+          .navigation-thq-dropdown {
             cursor: pointer;
             display: inline-block;
             padding: 4px 8px;
@@ -455,19 +367,19 @@ const Navigation = (props) => {
             border-width: 1px;
             border-radius: 4px;
           }
-          .navigation-thq-dropdown-toggle2 {
+          .navigation-thq-dropdown-toggle {
             gap: 4px;
             display: inline-flex;
             align-items: center;
           }
-          .navigation-thq-dropdown-arrow2 {
+          .navigation-thq-dropdown-arrow {
             transition: 0.3s;
           }
-          .navigation-icon25 {
+          .navigation-icon21 {
             width: 18px;
             height: 18px;
           }
-          .navigation-thq-dropdown-list2 {
+          .navigation-thq-dropdown-list {
             display: none;
             z-index: 100;
             position: absolute;
