@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -67,16 +68,20 @@ const Contact = (props) => {
               solutions. Ready to scale your vision?
             </p>
             <div className="contact-hero-actions">
-              <a href="#inquiry">
-                <div className="btn-lg btn btn-primary">
-                  <span>Request a Brief</span>
-                </div>
-              </a>
-              <a href="#project-form">
-                <div className="btn-lg btn-accent btn">
-                  <span>Start a Project</span>
-                </div>
-              </a>
+              <Link href="/consultation">
+                <a>
+                  <div className="contact-thq-btn-elm1 btn-lg btn btn-primary">
+                    <span>Request a Brief</span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/launch">
+                <a>
+                  <div className="contact-thq-btn-elm2 btn-lg btn-accent btn">
+                    <span>Start a Project</span>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="hero-floating-mockup">
@@ -798,6 +803,12 @@ formInputs.forEach(input => {
             color: var(--color-accent);
             text-shadow: 0 0 20px
               color-mix(in srgb, var(--color-accent) 50%, transparent);
+          }
+          .contact-thq-btn-elm1 {
+            text-decoration: none;
+          }
+          .contact-thq-btn-elm2 {
+            text-decoration: none;
           }
           .contact-thq-checkbox-text-elm {
             color: var(--color-neutral);
