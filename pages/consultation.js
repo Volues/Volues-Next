@@ -66,11 +66,11 @@ section {
             </p>
             <div className="page-hero-cta-group">
               <a href="#consultation">
-                <div className="btn-accent btn-lg">
+                <div className="consultation-thq-btn-accent-elm1 btn-accent btn-lg">
                   <span>Book Consultation</span>
                 </div>
               </a>
-              <div className="btn-lg btn-outline">
+              <div className="consultation-thq-btn-outline-elm1 btn-lg btn-outline">
                 <span>View Projects</span>
               </div>
             </div>
@@ -142,7 +142,7 @@ section {
                 <span>TechFlow</span>
               </div>
               <div className="page-partner-logo">
-                <span>Nexus Systems</span>
+                <span>Neos Systems</span>
               </div>
               <div className="page-partner-logo">
                 <span>Quantum AI</span>
@@ -543,6 +543,20 @@ section {
           }
           .consultation-container12 {
             display: contents;
+          }
+          .consultation-thq-btn-accent-elm1 {
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+          }
+          .consultation-thq-btn-outline-elm1 {
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
           }
           .consultation-container13 {
             width: 100%;

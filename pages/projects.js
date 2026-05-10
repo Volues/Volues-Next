@@ -658,7 +658,7 @@ const Projects = (props) => {
                 <div className="testimonial-author">
                   <img
                     alt="Sarah Jenkins"
-                    src="https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="author-avatar"
                   />
                   <div className="author-info">
@@ -691,7 +691,7 @@ const Projects = (props) => {
                 <div className="testimonial-author">
                   <img
                     alt="Marcus Chen"
-                    src="https://images.pexels.com/photos/16094052/pexels-photo-16094052.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/16094052/pexels-photo-16094052.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="author-avatar"
                   />
                   <div className="author-info">
