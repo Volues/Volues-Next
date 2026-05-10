@@ -1044,6 +1044,22 @@ opacity: 0.3;}}
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="launch-container24">
+            <Script
+              html={`<style>
+@keyframes float-gentle {
+0%, 100% {
+  transform: translateY(0px);
+}
+50% {
+  transform: translateY(-14px);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -1085,6 +1101,9 @@ opacity: 0.3;}}
             display: contents;
           }
           .launch-container22 {
+            display: contents;
+          }
+          .launch-container24 {
             display: contents;
           }
           @media (max-width: 767px) {

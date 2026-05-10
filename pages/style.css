@@ -6442,7 +6442,7 @@
   position: relative;
   transform: none;
   background: #ffffff;
-  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.12), inset 0 0 2px 2px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.12), inset 0 0 2px 2px rgba(0, 0, 0, 0.02), 0 0 0 1px rgba(255, 255, 255, 0.5);
   transition: transform 0.6s ease-out;
   border-radius: 40px;
 }
@@ -6495,8 +6495,8 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   padding: var(--spacing-md);
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.3);
   align-items: center;
   border-radius: var(--border-radius-lg);
   backdrop-filter: blur(12px);
@@ -7122,7 +7122,7 @@
   color: #0B1220;
   display: flex;
   padding: var(--spacing-4xl) 0;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   min-height: auto;
   align-items: center;
@@ -7144,6 +7144,7 @@
   display: flex;
   padding: 0 var(--spacing-xl);
   z-index: 3;
+  overflow: visible;
   position: relative;
   flex-wrap: nowrap;
   max-width: var(--content-max-width);
@@ -7174,10 +7175,13 @@
 .page-hero-visual {
   flex: 1 1 40%;
   display: flex;
+  z-index: 10;
   position: relative;
   max-width: 40%;
   min-width: 0;
   align-items: center;
+  perspective: 1000px;
+  padding-bottom: 20px;
   justify-content: center;
 }
  
@@ -7211,10 +7215,10 @@
   z-index: 5;
   overflow: visible;
   position: relative;
-  animation: none;
+  animation: float-gentle 4s ease-in-out infinite;
   max-width: 320px;
   transform: none;
-  box-shadow: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.1);
   border-radius: 0;
 }
  
@@ -7989,12 +7993,17 @@
     max-width: 100%;
     margin-top: var(--spacing-2xl);
     min-height: 400px;
+    padding-bottom: 20px;
   }
   .page-hero-actions {
     justify-content: center;
   }
   .page-hero-stats {
     justify-content: center;
+  }
+  .page-card-11 {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    animation-duration: 5s;
   }
   .page-services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -8490,6 +8499,10 @@
   }
   .page-hero-actions {
     flex-direction: column;
+  }
+  .page-card-11 {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    animation-duration: 6s;
   }
   .container-narrow {
     padding: 0 var(--spacing-md);
