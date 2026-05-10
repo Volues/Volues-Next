@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -68,11 +69,13 @@ const Launch = (props) => {
                     <span>Start Your Project</span>
                   </div>
                 </a>
-                <a href="#consultation">
-                  <div className="btn-lg btn btn-outline">
-                    <span>Book Consultation</span>
-                  </div>
-                </a>
+                <Link href="/consultation">
+                  <a>
+                    <div className="launch-thq-btn-elm2 btn-lg btn btn-outline">
+                      <span>Book Consultation</span>
+                    </div>
+                  </a>
+                </Link>
               </div>
               <div className="page-hero-stats">
                 <div className="stat-item page-stat-item">
@@ -1059,6 +1062,9 @@ opacity: 0.3;}}
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+          .launch-thq-btn-elm2 {
+            text-decoration: none;
           }
           .launch-thq-trust-nav-elm {
             gap: var(--spacing-md);

@@ -157,6 +157,15 @@ const Footer = (props) => {
                         </a>
                       </Link>
                     </li>
+                    <li className="footer-nav-item">
+                      <Link href="/consultation">
+                        <a>
+                          <div className="footer-nav-link">
+                            <span>Consultation</span>
+                          </div>
+                        </a>
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div className="footer-nav-group">
