@@ -351,7 +351,7 @@ const Home = (props) => {
               />
               <div className="project-overlay">
                 <span className="project-category">Enterprise UI</span>
-                <h3 className="section-subtitle">Nexus Core Dashboard</h3>
+                <h3 className="section-subtitle">teleos Core Dashboard</h3>
                 <button className="btn-link">View Case Study</button>
               </div>
             </div>
