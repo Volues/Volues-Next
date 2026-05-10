@@ -52,7 +52,6 @@ section {
             ></Script>
           </div>
         </div>
-        <nav className="solutions-thq-navbar-container-elm solutions1-navbar-container"></nav>
         <section className="solutions1-hero-section">
           <div className="hero-glow-1"></div>
           <div className="hero-glow-2"></div>
@@ -91,7 +90,7 @@ section {
           <div className="solutions1-hero-visual">
             <div className="solutions1-mockup-container">
               <img
-                src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=1500"
                 alt="Futuristic Dashboard Mockup"
                 className="solutions1-mockup-image main-mockup"
               />
@@ -824,9 +823,6 @@ section {
           }
           .solutions-container3 {
             display: contents;
-          }
-          .solutions-thq-navbar-container-elm {
-            border: 2px dashed rgba(120, 120, 120, 0.4);
           }
           .solutions-container4 {
             display: none;
