@@ -40,17 +40,6 @@ const Launch = (props) => {
         </Head>
         <Navigation></Navigation>
         <section className="hero-wrapper">
-          <div className="hero-background">
-            <video
-              src="https://videos.pexels.com/video-files/33248294/14165279_640_360_30fps.mp4"
-              loop="true"
-              muted="true"
-              autoPlay="true"
-              playsInline="true"
-              className="hero-video"
-            ></video>
-            <div className="page-hero-overlay"></div>
-          </div>
           <div className="page-hero-container">
             <div className="page-hero-content">
               <h1 className="page-hero-title hero-title">
@@ -973,21 +962,19 @@ opacity: 0.3;}}
           })
           // Floating parallax for hero visual
           document.addEventListener("mousemove", (e) => {
-            const visual = document.querySelector(".hero-visual")
+            const visual = document.querySelector(".page-hero-visual")
             if (!visual) return
             const moveX = (e.clientX - window.innerWidth / 2) * 0.01
             const moveY = (e.clientY - window.innerHeight / 2) * 0.01
-            const card1 = document.querySelector(".card-1")
-            const card2 = document.querySelector(".card-2")
-            if (card1) card1.style.transform = \`perspective(1000px) rotateY(\\\${-15 + moveX}deg) rotateX(\\\${10 + moveY}deg) translateZ(20px)\`
-            if (card2) card2.style.transform = \`perspective(1000px) rotateY(\\\${15 + moveX}deg) rotateX(\\\${-5 + moveY}deg) translateZ(-20px)\`
+            const card1 = document.querySelector(".hero-mockup-floating-1")
+            const card2 = document.querySelector(".hero-mockup-floating-2")
+            if (card1) card1.style.transform = \`perspective(1000px) rotateY(\${-15 + moveX}deg) rotateX(\${10 + moveY}deg) translateZ(20px)\`
+            if (card2) card2.style.transform = \`perspective(1000px) rotateY(\${15 + moveX}deg) rotateX(\${-5 + moveY}deg) translateZ(-20px)\`
           })
-
           // Trust slider navigation
           const trustScroll = document.querySelector(".trust-scroll")
           const trustDots = document.querySelectorAll(".trust-dot")
           const trustNavBtns = document.querySelectorAll("[data-trust-nav]")
-
           if (trustScroll && trustDots.length) {
             const updateActiveDot = () => {
               const scrollLeft = trustScroll.scrollLeft
@@ -997,9 +984,7 @@ opacity: 0.3;}}
                 dot.classList.toggle("active", i === activeIndex)
               })
             }
-
             trustScroll.addEventListener("scroll", updateActiveDot, { passive: true })
-
             trustDots.forEach((dot) => {
               dot.addEventListener("click", () => {
                 const index = parseInt(dot.dataset.trustDot)
@@ -1009,7 +994,6 @@ opacity: 0.3;}}
                 }
               })
             })
-
             trustNavBtns.forEach((btn) => {
               btn.addEventListener("click", () => {
                 const direction = btn.dataset.trustNav === "prev" ? -1 : 1
