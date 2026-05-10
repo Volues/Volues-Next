@@ -42,11 +42,11 @@ const Launch = (props) => {
         <section className="hero-wrapper">
           <div className="hero-background">
             <video
-              autoPlay="true"
-              muted="true"
-              loop="true"
-              playsInline="true"
               src="https://videos.pexels.com/video-files/33248294/14165279_640_360_30fps.mp4"
+              loop="true"
+              muted="true"
+              autoPlay="true"
+              playsInline="true"
               className="hero-video"
             ></video>
             <div className="page-hero-overlay"></div>
@@ -75,33 +75,33 @@ const Launch = (props) => {
               </p>
               <div className="page-hero-actions">
                 <a href="#inquiry">
-                  <div className="btn btn-primary btn-lg">
+                  <div className="btn-lg btn btn-primary">
                     <span>Start Your Project</span>
                   </div>
                 </a>
                 <a href="#consultation">
-                  <div className="btn btn-lg btn-outline">
+                  <div className="btn-lg btn btn-outline">
                     <span>Book Consultation</span>
                   </div>
                 </a>
               </div>
               <div className="page-hero-stats">
-                <div className="page-stat-item stat-item">
+                <div className="stat-item page-stat-item">
                   <span className="page-stat-number">99%</span>
                   <span className="page-stat-label">Fast Project Delivery</span>
                 </div>
-                <div className="page-stat-item stat-item">
+                <div className="stat-item page-stat-item">
                   <span className="page-stat-number">100%</span>
                   <span className="page-stat-label">Scalable Architecture</span>
                 </div>
-                <div className="page-stat-item stat-item">
+                <div className="stat-item page-stat-item">
                   <span className="page-stat-number">Next-Gen</span>
                   <span className="page-stat-label">Modern Technologies</span>
                 </div>
               </div>
             </div>
             <div className="page-hero-visual">
-              <div className="floating-ui-card page-card-11">
+              <div className="page-card-11 floating-ui-card">
                 <div className="hero-mockup2-hero-mockup-visual">
                   <div className="hero-mockup2-hero-mockup-phone-frame">
                     <div className="hero-mockup-phone-inner">
@@ -269,13 +269,235 @@ const Launch = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="floating-ui-card page-card-21">
+              <div className="page-card-21 floating-ui-card">
                 <img
-                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=400"
                   alt="UI Element"
+                  src="https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=400"
                 />
               </div>
               <div className="glow-orb"></div>
+            </div>
+          </div>
+        </section>
+        <section id="inquiry" className="form-wrapper">
+          <div className="container-narrow">
+            <div className="page-glass-card form-container">
+              <h2 className="section-title text-center">Launch Your Project</h2>
+              <p className="section-content mb-xl text-center">
+                Fill out the form below to start your digital journey with
+                Volues.
+              </p>
+              <form
+                action="/submit"
+                method="POST"
+                data-form-id="f914cbfc-361d-4450-99ab-7c3862cd12b2"
+                className="inquiry-form"
+              >
+                <div className="form-grid">
+                  <div className="form-group page-form-group">
+                    <label htmlFor="full-name">Full Name</label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      required="true"
+                      placeholder="John Doe"
+                      data-form-field-id="full-name"
+                    />
+                  </div>
+                  <div className="form-group page-form-group">
+                    <label htmlFor="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required="true"
+                      placeholder="john@company.com"
+                      data-form-field-id="email"
+                    />
+                  </div>
+                  <div className="form-group page-form-group">
+                    <label htmlFor="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required="true"
+                      placeholder="+1 (555) 000-0000"
+                      data-form-field-id="phone"
+                    />
+                  </div>
+                  <div className="form-group page-form-group">
+                    <label htmlFor="company">Company / Organization</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      placeholder="Your Startup Name"
+                      data-form-field-id="company"
+                    />
+                  </div>
+                  <div className="full-width form-group page-form-group">
+                    <label htmlFor="project-type">Project Type</label>
+                    <select
+                      id="project-type"
+                      name="project-type"
+                      required="true"
+                      data-form-field-id="project-type"
+                    >
+                      <option value="true" disabled="true" selected="true">
+                        Select an option
+                      </option>
+                      <option value="website">Website</option>
+                      <option value="mobile-app">Mobile App</option>
+                      <option value="saas">SaaS Platform</option>
+                      <option value="enterprise">Enterprise Software</option>
+                      <option value="uiux">UI/UX Design</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div className="full-width form-group page-form-group">
+                    <label htmlFor="description">Project Description</label>
+                    <textarea
+                      id="description"
+                      name="description"
+                      rows="5"
+                      required="true"
+                      placeholder="Tell us about your vision..."
+                      data-form-field-id="description"
+                    ></textarea>
+                  </div>
+                  <div className="form-group page-form-group">
+                    <label htmlFor="budget">Budget Range</label>
+                    <select
+                      id="budget"
+                      name="budget"
+                      required="true"
+                      data-form-field-id="budget"
+                    >
+                      <option value="under-5k">Under $5k</option>
+                      <option value="5k-15k">$5k - $15k</option>
+                      <option value="15k-50k">$15k - $50k</option>
+                      <option value="over-50k">$50k+</option>
+                    </select>
+                  </div>
+                  <div className="form-group page-form-group">
+                    <label htmlFor="timeline">Preferred Timeline</label>
+                    <select
+                      id="timeline"
+                      name="timeline"
+                      required="true"
+                      data-form-field-id="timeline"
+                    >
+                      <option value="urgent">Urgent (&lt; 1 month)</option>
+                      <option value="standard">Standard (1-3 months)</option>
+                      <option value="flexible">Flexible (3+ months)</option>
+                    </select>
+                  </div>
+                  <div className="full-width form-group page-form-group">
+                    <label>Required Features</label>
+                    <div className="checkbox-grid">
+                      <label className="checkbox-item">
+                        <input
+                          type="checkbox"
+                          id="thq_features_wFZD"
+                          name="features"
+                          value="auth"
+                          data-form-field-id="thq_features_wFZD"
+                        />
+                        <span>
+                          {' '}
+                          Authentication
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                      </label>
+                      <label className="checkbox-item">
+                        <input
+                          type="checkbox"
+                          id="thq_features_B906"
+                          name="features"
+                          value="payments"
+                          data-form-field-id="thq_features_B906"
+                        />
+                        <span>
+                          {' '}
+                          Payments
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                      </label>
+                      <label className="checkbox-item">
+                        <input
+                          type="checkbox"
+                          id="thq_features_4JPA"
+                          name="features"
+                          value="cms"
+                          data-form-field-id="thq_features_4JPA"
+                        />
+                        <span>
+                          {' '}
+                          CMS
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                      </label>
+                      <label className="checkbox-item">
+                        <input
+                          type="checkbox"
+                          id="thq_features_eW8K"
+                          name="features"
+                          value="api"
+                          data-form-field-id="thq_features_eW8K"
+                        />
+                        <span>
+                          {' '}
+                          API Integration
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="full-width form-group page-form-group">
+                    <label htmlFor="website">Current Website (optional)</label>
+                    <input
+                      type="url"
+                      id="website"
+                      name="website"
+                      placeholder="https://"
+                      data-form-field-id="website"
+                    />
+                  </div>
+                </div>
+                <div className="page-form-footer">
+                  <p className="opacity-70 text-sm">
+                    Your data is secure and encrypted. We typically respond
+                    within 24 hours.
+                  </p>
+                  <button
+                    id="thq_button_uKsW"
+                    name="button"
+                    type="submit"
+                    data-form-field-id="thq_button_uKsW"
+                    className="btn-accent w-full btn btn-xl"
+                  >
+                    Submit Project Inquiry
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
@@ -299,25 +521,25 @@ const Launch = (props) => {
         </section>
         <section className="services-wrapper">
           <div className="page-container">
-            <h2 className="text-center section-title">
+            <h2 className="section-title text-center">
               Premium Digital Solutions
             </h2>
             <div className="page-services-grid">
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                     ></path>
                   </svg>
                 </div>
@@ -327,28 +549,28 @@ const Launch = (props) => {
                   frameworks for maximum conversion.
                 </p>
               </div>
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <rect
-                        width="14"
-                        height="20"
                         x="5"
                         y="2"
                         rx="2"
                         ry="2"
+                        width="14"
+                        height="20"
                       ></rect>
                       <path d="M12 18h.01"></path>
                     </g>
@@ -360,36 +582,36 @@ const Launch = (props) => {
                   to engage with daily.
                 </p>
               </div>
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <rect
-                        width="20"
-                        height="8"
                         x="2"
                         y="2"
                         rx="2"
                         ry="2"
-                      ></rect>
-                      <rect
                         width="20"
                         height="8"
+                      ></rect>
+                      <rect
                         x="2"
                         y="14"
                         rx="2"
                         ry="2"
+                        width="20"
+                        height="8"
                       ></rect>
                       <path d="M6 6h.01M6 18h.01"></path>
                     </g>
@@ -401,20 +623,20 @@ const Launch = (props) => {
                   streamline complex business operations.
                 </p>
               </div>
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M12 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0"></path>
                       <path d="M6 6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3"></path>
@@ -428,21 +650,21 @@ const Launch = (props) => {
                   intuitive functionality.
                 </p>
               </div>
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                     ></path>
                   </svg>
                 </div>
@@ -452,24 +674,24 @@ const Launch = (props) => {
                   scalability for your data.
                 </p>
               </div>
-              <div className="page-service-card page-glass-card">
+              <div className="page-glass-card page-service-card">
                 <div className="page-service-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <circle cx="12" cy="12" r="6"></circle>
-                      <circle cx="12" cy="12" r="2"></circle>
+                      <circle r="10" cx="12" cy="12"></circle>
+                      <circle r="6" cx="12" cy="12"></circle>
+                      <circle r="2" cx="12" cy="12"></circle>
                     </g>
                   </svg>
                 </div>
@@ -482,231 +704,9 @@ const Launch = (props) => {
             </div>
           </div>
         </section>
-        <section id="inquiry" className="form-wrapper">
-          <div className="container-narrow">
-            <div className="form-container page-glass-card">
-              <h2 className="text-center section-title">Launch Your Project</h2>
-              <p className="text-center mb-xl section-content">
-                Fill out the form below to start your digital journey with
-                Volues.
-              </p>
-              <form
-                action="/submit"
-                method="POST"
-                data-form-id="f914cbfc-361d-4450-99ab-7c3862cd12b2"
-                className="inquiry-form"
-              >
-                <div className="form-grid">
-                  <div className="page-form-group form-group">
-                    <label htmlFor="full-name">Full Name</label>
-                    <input
-                      type="text"
-                      id="full-name"
-                      name="full-name"
-                      required="true"
-                      placeholder="John Doe"
-                      data-form-field-id="full-name"
-                    />
-                  </div>
-                  <div className="page-form-group form-group">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required="true"
-                      placeholder="john@company.com"
-                      data-form-field-id="email"
-                    />
-                  </div>
-                  <div className="page-form-group form-group">
-                    <label htmlFor="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required="true"
-                      placeholder="+1 (555) 000-0000"
-                      data-form-field-id="phone"
-                    />
-                  </div>
-                  <div className="page-form-group form-group">
-                    <label htmlFor="company">Company / Organization</label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      placeholder="Your Startup Name"
-                      data-form-field-id="company"
-                    />
-                  </div>
-                  <div className="page-form-group form-group full-width">
-                    <label htmlFor="project-type">Project Type</label>
-                    <select
-                      id="project-type"
-                      name="project-type"
-                      required="true"
-                      data-form-field-id="project-type"
-                    >
-                      <option value="true" disabled="true" selected="true">
-                        Select an option
-                      </option>
-                      <option value="website">Website</option>
-                      <option value="mobile-app">Mobile App</option>
-                      <option value="saas">SaaS Platform</option>
-                      <option value="enterprise">Enterprise Software</option>
-                      <option value="uiux">UI/UX Design</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div className="page-form-group form-group full-width">
-                    <label htmlFor="description">Project Description</label>
-                    <textarea
-                      id="description"
-                      name="description"
-                      rows="5"
-                      required="true"
-                      placeholder="Tell us about your vision..."
-                      data-form-field-id="description"
-                    ></textarea>
-                  </div>
-                  <div className="page-form-group form-group">
-                    <label htmlFor="budget">Budget Range</label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      required="true"
-                      data-form-field-id="budget"
-                    >
-                      <option value="under-5k">Under $5k</option>
-                      <option value="5k-15k">$5k - $15k</option>
-                      <option value="15k-50k">$15k - $50k</option>
-                      <option value="over-50k">$50k+</option>
-                    </select>
-                  </div>
-                  <div className="page-form-group form-group">
-                    <label htmlFor="timeline">Preferred Timeline</label>
-                    <select
-                      id="timeline"
-                      name="timeline"
-                      required="true"
-                      data-form-field-id="timeline"
-                    >
-                      <option value="urgent">Urgent (&lt; 1 month)</option>
-                      <option value="standard">Standard (1-3 months)</option>
-                      <option value="flexible">Flexible (3+ months)</option>
-                    </select>
-                  </div>
-                  <div className="page-form-group form-group full-width">
-                    <label>Required Features</label>
-                    <div className="checkbox-grid">
-                      <label className="checkbox-item">
-                        <input
-                          type="checkbox"
-                          name="features"
-                          value="auth"
-                          id="thq_features_wFZD"
-                          data-form-field-id="thq_features_wFZD"
-                        />
-                        <span>
-                          {' '}
-                          Authentication
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                      </label>
-                      <label className="checkbox-item">
-                        <input
-                          type="checkbox"
-                          name="features"
-                          value="payments"
-                          id="thq_features_B906"
-                          data-form-field-id="thq_features_B906"
-                        />
-                        <span>
-                          {' '}
-                          Payments
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                      </label>
-                      <label className="checkbox-item">
-                        <input
-                          type="checkbox"
-                          name="features"
-                          value="cms"
-                          id="thq_features_4JPA"
-                          data-form-field-id="thq_features_4JPA"
-                        />
-                        <span>
-                          {' '}
-                          CMS
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                      </label>
-                      <label className="checkbox-item">
-                        <input
-                          type="checkbox"
-                          name="features"
-                          value="api"
-                          id="thq_features_eW8K"
-                          data-form-field-id="thq_features_eW8K"
-                        />
-                        <span>
-                          {' '}
-                          API Integration
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div className="page-form-group form-group full-width">
-                    <label htmlFor="website">Current Website (optional)</label>
-                    <input
-                      type="url"
-                      id="website"
-                      name="website"
-                      placeholder="https://"
-                      data-form-field-id="website"
-                    />
-                  </div>
-                </div>
-                <div className="page-form-footer">
-                  <p className="text-sm opacity-70">
-                    Your data is secure and encrypted. We typically respond
-                    within 24 hours.
-                  </p>
-                  <button
-                    type="submit"
-                    id="thq_button_uKsW"
-                    name="button"
-                    data-form-field-id="thq_button_uKsW"
-                    className="w-full btn btn-accent btn-xl"
-                  >
-                    Submit Project Inquiry
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
         <section className="process-wrapper">
           <div className="page-container">
-            <h2 className="text-center mb-4xl section-title">
+            <h2 className="mb-4xl section-title text-center">
               Our Scalable Workflow
             </h2>
             <div className="page-timeline-container">
@@ -772,7 +772,7 @@ const Launch = (props) => {
         </section>
         <section className="faq-wrapper">
           <div className="container-narrow">
-            <h2 className="text-center mb-3xl section-title">
+            <h2 className="mb-3xl section-title text-center">
               Frequently Asked Questions
             </h2>
             <div className="faq-list">
@@ -856,15 +856,15 @@ const Launch = (props) => {
             <div className="glow-pulse pulse-2"></div>
           </div>
           <div className="page-container text-center">
-            <h2 className="page-hero-title mb-xl hero-title">
+            <h2 className="page-hero-title hero-title mb-xl">
               Your Vision Deserves World-Class Engineering
             </h2>
-            <p className="mb-2xl section-subtitle">
+            <p className="section-subtitle mb-2xl">
               Stop compromising on quality. Let&apos;s build the future of your
               business together.
             </p>
             <a href="#inquiry">
-              <div className="btn btn-accent btn-xl">
+              <div className="btn-accent btn btn-xl">
                 <span>Start Your Project Now</span>
               </div>
             </a>

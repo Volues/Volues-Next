@@ -349,7 +349,7 @@ const Home = (props) => {
           <div className="home-thq-projects-masonry-elm">
             <div data-mockup="1" className="mockup-card">
               <div className="mockup-visual-wrapper">
-                <div className="dashboard-mockup hero-mockup-scale">
+                <div className="hero-mockup-scale dashboard-mockup">
                   <div className="card-1 floating-card">
                     <div className="card-glass">
                       <div className="pulse-dot"></div>
@@ -383,7 +383,7 @@ const Home = (props) => {
             </div>
             <div data-mockup="2" className="mockup-card">
               <div className="mockup-visual-wrapper">
-                <div className="dashboard-mockup hero-mockup-scale">
+                <div className="hero-mockup-scale dashboard-mockup">
                   <img
                     alt="Cloud Platform Interface"
                     src="/cloud-1500w.webp"
@@ -417,7 +417,7 @@ const Home = (props) => {
             </div>
             <div data-mockup="3" className="mockup-card">
               <div className="mockup-visual-wrapper">
-                <div className="dashboard-mockup hero-mockup-scale">
+                <div className="hero-mockup-scale dashboard-mockup">
                   <img
                     alt="Mobile Finance Application"
                     src="/welcome-1500w.jpg"
