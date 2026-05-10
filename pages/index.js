@@ -355,7 +355,7 @@ const Home = (props) => {
                   </div>
                   <img
                     alt="Professional SaaS Analytics Dashboard with Real-Time Data Charts, Revenue Metrics, and Clean Data Visualizations"
-                    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHx1c2VyJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc3ODQyNzgyOXww&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    src="/enterprise-1500w.png"
                     className="mockup-main"
                   />
                   <div className="card-2 floating-card">
@@ -383,7 +383,7 @@ const Home = (props) => {
                 <div className="dashboard-mockup hero-mockup-scale">
                   <img
                     alt="Cloud Platform Interface"
-                    src="https://images.unsplash.com/photo-1762330474317-93e7a23d096c?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI3fHxDbG91ZCUyMExvZ2lufGVufDB8fHx8MTc3ODQyNzc1NHww&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    src="/cloud-1500w.webp"
                     className="mockup-main"
                   />
                   <div className="card-1 floating-card">
@@ -417,7 +417,7 @@ const Home = (props) => {
                 <div className="dashboard-mockup hero-mockup-scale">
                   <img
                     alt="Mobile Finance Application"
-                    src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXIlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzc4NDI3ODI5fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    src="/welcome-1500w.jpg"
                     className="mockup-main"
                   />
                   <div className="card-1 floating-card">
