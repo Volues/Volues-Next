@@ -41,6 +41,7 @@ const Launch = (props) => {
         </Head>
         <Navigation></Navigation>
         <section className="hero-wrapper">
+          <div aria-hidden="true" className="hero-pulse-bg"></div>
           <div className="page-hero-container">
             <div className="page-hero-content">
               <h1 className="page-hero-title hero-title">
@@ -505,16 +506,16 @@ const Launch = (props) => {
           </div>
           <div className="launch-thq-trust-nav-elm">
             <button
-              data-trust-nav="prev"
               aria-label="Previous trust item"
-              className="button trust-nav-btn"
+              data-trust-nav="prev"
+              className="trust-nav-btn button"
             >
               <svg
+                fill="none"
                 width="16"
                 height="16"
-                viewBox="0 0 24 24"
-                fill="none"
                 stroke="currentColor"
+                viewBox="0 0 24 24"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -524,37 +525,37 @@ const Launch = (props) => {
             </button>
             <div className="launch-thq-trust-dots-elm">
               <button
-                data-trust-dot="0"
                 aria-label="Go to item 1"
-                className="active button trust-dot"
+                data-trust-dot="0"
+                className="active trust-dot button"
               ></button>
               <button
-                data-trust-dot="1"
                 aria-label="Go to item 2"
-                className="button trust-dot"
+                data-trust-dot="1"
+                className="trust-dot button"
               ></button>
               <button
-                data-trust-dot="2"
                 aria-label="Go to item 3"
-                className="button trust-dot"
+                data-trust-dot="2"
+                className="trust-dot button"
               ></button>
               <button
-                data-trust-dot="3"
                 aria-label="Go to item 4"
-                className="button trust-dot"
+                data-trust-dot="3"
+                className="trust-dot button"
               ></button>
             </div>
             <button
-              data-trust-nav="next"
               aria-label="Next trust item"
-              className="button trust-nav-btn"
+              data-trust-nav="next"
+              className="trust-nav-btn button"
             >
               <svg
+                fill="none"
                 width="16"
                 height="16"
-                viewBox="0 0 24 24"
-                fill="none"
                 stroke="currentColor"
+                viewBox="0 0 24 24"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -1047,6 +1048,43 @@ opacity: 0.3;}}
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="launch-container26">
+            <Script
+              html={`<style>
+@keyframes hero-pulse {
+0%, 100% {
+  opacity: 0.6;
+  transform: scale(1);
+}
+50% {
+  opacity: 1;
+  transform: scale(1.08);
+}
+}
+
+@keyframes hero-wave {
+0%, 100% {
+  transform: translate(0, 0) scale(1) rotate(0deg);
+  opacity: 0.3;
+}
+25% {
+  transform: translate(8%, -6%) scale(1.15) rotate(5deg);
+  opacity: 0.5;
+}
+50% {
+  transform: translate(-4%, 8%) scale(1.05) rotate(-3deg);
+  opacity: 0.4;
+}
+75% {
+  transform: translate(-8%, -4%) scale(1.2) rotate(4deg);
+  opacity: 0.5;
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -1094,6 +1132,9 @@ opacity: 0.3;}}
             display: contents;
           }
           .launch-container24 {
+            display: contents;
+          }
+          .launch-container26 {
             display: contents;
           }
           @media (max-width: 767px) {

@@ -56,7 +56,7 @@ section {
           <div className="page-hero-glow-1"></div>
           <div className="page-hero-glow-2"></div>
           <div className="page-hero-content1">
-            <h1 className="page-hero-title1 hero-title">
+            <h1 className="hero-title page-hero-title1">
               Next-Gen Digital Solutions for the Future
             </h1>
             <p className="page-hero-subtitle hero-subtitle">
@@ -66,7 +66,7 @@ section {
             </p>
             <div className="page-hero-cta-group">
               <a href="#consultation">
-                <div className="consultation-thq-btn-accent-elm1 btn-accent btn-lg">
+                <div className="consultation-thq-btn-accent-elm1 btn-lg btn-accent">
                   <span>Book Consultation</span>
                 </div>
               </a>
@@ -78,25 +78,25 @@ section {
           <div className="page-hero-visual1">
             <div className="page-dashboard-mockup">
               <img
-                src="/web2-1500w.webp"
                 alt="Futuristic Software Dashboard"
+                src="/web2-1500w.webp"
                 className="page-mockup-img"
               />
-              <div className="page-floating-card page-card-12">
+              <div className="page-card-12 page-floating-card">
                 <div className="page-card-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                     ></path>
                   </svg>
                 </div>
@@ -104,24 +104,24 @@ section {
                   <span className="page-card-label card-label">
                     Active Deployments
                   </span>
-                  <span className="page-card-value card-value">1,284</span>
+                  <span className="card-value page-card-value">1,284</span>
                 </div>
               </div>
               <div className="page-floating-card page-card-21">
                 <div className="page-card-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                     ></path>
                   </svg>
                 </div>
@@ -129,7 +129,7 @@ section {
                   <span className="page-card-label card-label">
                     Cloud Uptime
                   </span>
-                  <span className="page-card-value card-value">99.99%</span>
+                  <span className="card-value page-card-value">99.99%</span>
                 </div>
               </div>
             </div>
@@ -237,18 +237,18 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
                     ></path>
                   </svg>
                 </div>
@@ -261,25 +261,25 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <rect
-                        width="14"
-                        height="20"
                         x="5"
                         y="2"
                         rx="2"
                         ry="2"
+                        width="14"
+                        height="20"
                       ></rect>
                       <path d="M12 18h.01"></path>
                     </g>
@@ -294,18 +294,18 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M4 6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm0 9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm10-9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm0 9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm10-9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
                     ></path>
                   </svg>
                 </div>
@@ -318,17 +318,17 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                       <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
@@ -345,18 +345,18 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                     ></path>
                   </svg>
                 </div>
@@ -369,21 +369,21 @@ section {
               <div className="page-service-card1">
                 <div className="page-service-icon1">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <circle cx="12" cy="12" r="6"></circle>
-                      <circle cx="12" cy="12" r="2"></circle>
+                      <circle r="10" cx="12" cy="12"></circle>
+                      <circle r="6" cx="12" cy="12"></circle>
+                      <circle r="2" cx="12" cy="12"></circle>
                     </g>
                   </svg>
                 </div>
@@ -450,7 +450,7 @@ section {
         </section>
         <section className="page-cta-banner">
           <div className="cta-banner-content">
-            <h2 className="page-hero-title1 hero-title">
+            <h2 className="hero-title page-hero-title1">
               Ready to build the future?
             </h2>
             <p className="page-hero-subtitle hero-subtitle">
@@ -458,7 +458,7 @@ section {
             </p>
             <div className="page-cta-actions">
               <button className="btn-accent btn-xl">Start a Project</button>
-              <button className="btn-outline btn-xl">View Solutions</button>
+              <button className="btn-xl btn-outline">View Solutions</button>
             </div>
           </div>
         </section>
