@@ -8166,6 +8166,40 @@
   position: relative;
 }
  
+.form-notification {
+  gap: var(--spacing-md);
+  top: 20px;
+  color: #ffffff;
+  right: 20px;
+  display: flex;
+  opacity: 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  z-index: 9999;
+  position: fixed;
+  font-size: var(--font-size-sm);
+  transform: translateX(120%);
+  background: #10B981;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+  align-items: center;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-lg);
+  pointer-events: none;
+}
+ 
+.form-notification.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+ 
+.form-notification-check {
+  width: 20px;
+  height: 20px;
+  animation: check-pop 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  flex-shrink: 0;
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Orbitron;

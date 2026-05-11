@@ -274,18 +274,34 @@ const Launch = (props) => {
                 Volues.
               </p>
               <form
-                action="/submit"
+                action="https://api.web3forms.com/submit"
                 method="POST"
+                id="launch-form"
                 data-form-id="f914cbfc-361d-4450-99ab-7c3862cd12b2"
                 className="inquiry-form"
               >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="ff11bb64-234e-442e-9fad-0e4654c39321"
+                  id="thq_access_key_KUeE"
+                  data-form-field-id="thq_access_key_KUeE"
+                  className="input"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  id="thq_botcheck_1_i-"
+                  data-form-field-id="thq_botcheck_1_i-"
+                  className="launch-thq-hidden-elm input"
+                />
                 <div className="form-grid">
                   <div className="form-group page-form-group">
                     <label htmlFor="full-name">Full Name</label>
                     <input
                       type="text"
                       id="full-name"
-                      name="full-name"
+                      name="name"
                       required="true"
                       placeholder="John Doe"
                       data-form-field-id="full-name"
@@ -307,7 +323,7 @@ const Launch = (props) => {
                     <input
                       type="tel"
                       id="phone"
-                      name="phone"
+                      name="phone_number"
                       required="true"
                       placeholder="+1 (555) 000-0000"
                       data-form-field-id="phone"
@@ -318,7 +334,7 @@ const Launch = (props) => {
                     <input
                       type="text"
                       id="company"
-                      name="company"
+                      name="company_name"
                       placeholder="Your Startup Name"
                       data-form-field-id="company"
                     />
@@ -327,7 +343,7 @@ const Launch = (props) => {
                     <label htmlFor="project-type">Project Type</label>
                     <select
                       id="project-type"
-                      name="project-type"
+                      name="project_type"
                       required="true"
                       data-form-field-id="project-type"
                     >
@@ -346,7 +362,7 @@ const Launch = (props) => {
                     <label htmlFor="description">Project Description</label>
                     <textarea
                       id="description"
-                      name="description"
+                      name="message"
                       rows="5"
                       required="true"
                       placeholder="Tell us about your vision..."
@@ -357,7 +373,7 @@ const Launch = (props) => {
                     <label htmlFor="budget">Budget Range</label>
                     <select
                       id="budget"
-                      name="budget"
+                      name="budget_range"
                       required="true"
                       data-form-field-id="budget"
                     >
@@ -371,7 +387,7 @@ const Launch = (props) => {
                     <label htmlFor="timeline">Preferred Timeline</label>
                     <select
                       id="timeline"
-                      name="timeline"
+                      name="preferred_timeline"
                       required="true"
                       data-form-field-id="timeline"
                     >
@@ -462,7 +478,7 @@ const Launch = (props) => {
                     <input
                       type="url"
                       id="website"
-                      name="website"
+                      name="current_website"
                       placeholder="https://"
                       data-form-field-id="website"
                     />
@@ -1006,6 +1022,60 @@ opacity: 0.3;}}
               })
             })
           }
+          // Web3Forms submission handler
+          const form = document.getElementById("launch-form")
+          if (form) {
+            form.addEventListener("submit", async function (e) {
+              e.preventDefault()
+              const submitBtn = form.querySelector('button[type="submit"]')
+              const originalText = submitBtn ? submitBtn.textContent : ""
+              if (submitBtn) {
+                submitBtn.disabled = true
+                submitBtn.textContent = "Sending..."
+              }
+              const formData = new FormData(form)
+              try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  body: formData,
+                })
+                const result = await response.json()
+                if (result.success) {
+                  // Show floating notification
+                  const notification = document.createElement("div")
+                  notification.className = "form-notification"
+                  notification.innerHTML = \`
+                      <svg class="form-notification-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <span>Thank you for submitting! We'll reach out soon.</span>
+                    \`
+                  document.body.appendChild(notification)
+                  // Trigger slide-in
+                  requestAnimationFrame(() => {
+                    notification.classList.add("show")
+                  })
+                  // Fade out and remove after 4 seconds
+                  setTimeout(() => {
+                    notification.classList.remove("show")
+                    notification.addEventListener("transitionend", () => {
+                      if (notification.parentNode) notification.parentNode.removeChild(notification)
+                    })
+                  }, 4000)
+                  form.reset()
+                } else {
+                  alert("Something went wrong. Please try again.")
+                }
+              } catch (err) {
+                alert("Something went wrong. Please try again.")
+              } finally {
+                if (submitBtn) {
+                  submitBtn.disabled = false
+                  submitBtn.textContent = originalText
+                }
+              }
+            })
+          }
         })()
       </script>`}
             ></Script>
@@ -1085,6 +1155,28 @@ opacity: 0.3;}}
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="launch-container28">
+            <Script
+              html={`<style>
+@keyframes check-pop {
+0% {
+  transform: scale(0) rotate(-45deg);
+  opacity: 0;
+}
+60% {
+  transform: scale(1.2) rotate(5deg);
+  opacity: 1;
+}
+100% {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -1103,6 +1195,9 @@ opacity: 0.3;}}
           }
           .launch-thq-btn-elm2 {
             text-decoration: none;
+          }
+          .launch-thq-hidden-elm {
+            display: none;
           }
           .launch-thq-trust-nav-elm {
             gap: var(--spacing-md);
@@ -1135,6 +1230,9 @@ opacity: 0.3;}}
             display: contents;
           }
           .launch-container26 {
+            display: contents;
+          }
+          .launch-container28 {
             display: contents;
           }
           @media (max-width: 767px) {
