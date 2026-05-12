@@ -274,24 +274,24 @@ const Launch = (props) => {
                 Volues.
               </p>
               <form
+                id="launch-form"
                 action="https://api.web3forms.com/submit"
                 method="POST"
-                id="launch-form"
                 data-form-id="f914cbfc-361d-4450-99ab-7c3862cd12b2"
                 className="inquiry-form"
               >
                 <input
                   type="hidden"
+                  id="thq_access_key_KUeE"
                   name="access_key"
                   value="ff11bb64-234e-442e-9fad-0e4654c39321"
-                  id="thq_access_key_KUeE"
                   data-form-field-id="thq_access_key_KUeE"
                   className="input"
                 />
                 <input
                   type="checkbox"
-                  name="botcheck"
                   id="thq_botcheck_1_i-"
+                  name="botcheck"
                   data-form-field-id="thq_botcheck_1_i-"
                   className="launch-thq-hidden-elm input"
                 />
