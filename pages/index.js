@@ -64,7 +64,7 @@ const Home = (props) => {
               </p>
               <div className="hero-actions">
                 <Link href="/launch">
-                  <a className="home-link btn-lg btn btn-primary">
+                  <a className="home-link1 btn-lg btn btn-primary">
                     Launch Your Vision
                   </a>
                 </Link>
@@ -640,12 +640,16 @@ const Home = (props) => {
               software solutions.
             </p>
             <div className="final-cta-buttons">
-              <button className="btn-accent btn btn-xl">
-                Start Your Project
-              </button>
-              <button className="btn btn-xl btn-outline">
-                Speak to an Expert
-              </button>
+              <Link href="/launch">
+                <a className="home-link2 btn-accent btn btn-xl">
+                  Start Your Project
+                </a>
+              </Link>
+              <Link href="/consultation">
+                <a className="home-link3 btn btn-xl btn-outline">
+                  Speak to an Expert
+                </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -784,7 +788,7 @@ const Home = (props) => {
             width: 100%;
             min-height: 100vh;
           }
-          .home-link {
+          .home-link1 {
             text-align: center;
             text-decoration: none;
           }
@@ -794,6 +798,14 @@ const Home = (props) => {
             display: grid;
             max-width: var(--content-max-width);
             grid-template-columns: repeat(3, 1fr);
+          }
+          .home-link2 {
+            text-align: center;
+            text-decoration: none;
+          }
+          .home-link3 {
+            text-align: center;
+            text-decoration: none;
           }
           .home-container2 {
             display: none;
