@@ -57,14 +57,14 @@ const Capabilities = (props) => {
               <div className="page-hero-cta-group1">
                 <Link href="/launch">
                   <a>
-                    <div className="capabilities-thq-btn-elm1 page-btn btn btn-accent btn-lg">
+                    <div className="capabilities-thq-btn-elm1 btn-lg btn-accent btn page-btn">
                       <span>Launch Your Vision</span>
                     </div>
                   </a>
                 </Link>
                 <Link href="/consultation">
                   <a>
-                    <div className="capabilities-thq-btn-elm2 page-btn btn btn-lg btn-outline">
+                    <div className="capabilities-thq-btn-elm2 btn-lg btn btn-outline page-btn">
                       <span>Discuss Your Project</span>
                     </div>
                   </a>
@@ -72,17 +72,17 @@ const Capabilities = (props) => {
               </div>
             </div>
             <div className="page-hero-visual-container">
-              <div className="page-floating-card1 page-card-13">
+              <div className="page-card-13 page-floating-card1">
                 <div className="card-glow"></div>
                 <div className="card-content">
                   <div className="page-flex-row">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -95,17 +95,17 @@ const Capabilities = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="page-floating-card1 page-card-22">
+              <div className="page-card-22 page-floating-card1">
                 <div className="card-glow"></div>
                 <div className="card-content">
                   <div className="page-flex-row">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -117,8 +117,8 @@ const Capabilities = (props) => {
                 </div>
               </div>
               <img
-                src="https://images.pexels.com/photos/6950122/pexels-photo-6950122.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=1500"
                 alt="Futuristic Dashboard"
+                src="https://images.pexels.com/photos/6950122/pexels-photo-6950122.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=1500"
                 className="hero-main-visual"
               />
             </div>
@@ -158,8 +158,8 @@ const Capabilities = (props) => {
               </div>
               <div className="intro-visual">
                 <img
-                  src="https://images.pexels.com/photos/6950122/pexels-photo-6950122.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Futuristic Infrastructure"
+                  src="https://images.pexels.com/photos/7988090/pexels-photo-7988090.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="intro-image"
                 />
                 <div className="intro-glow"></div>
@@ -176,18 +176,18 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                    <circle cx="12" cy="12" r="1"></circle>
+                    <rect x="3" y="3" rx="2" width="18" height="18"></rect>
+                    <circle r="1" cx="12" cy="12"></circle>
                   </svg>
                 </div>
                 <h3 className="section-subtitle">
@@ -201,12 +201,12 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -214,9 +214,9 @@ const Capabilities = (props) => {
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"></path>
                       <path d="m6 17l3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
@@ -233,12 +233,12 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -246,9 +246,9 @@ const Capabilities = (props) => {
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
                       <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
@@ -265,12 +265,12 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -278,9 +278,9 @@ const Capabilities = (props) => {
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M13 20.693c-.905.628-2.36.292-2.675-1.01a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.492.362 1.716 2.219.674 3.03"></path>
                       <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0m8 10l5-3l-5-3z"></path>
@@ -296,23 +296,23 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path
+                      d="M8 16v-6a2 2 0 1 1 4 0v6m-4-3h4m4-5v8"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M8 16v-6a2 2 0 1 1 4 0v6m-4-3h4m4-5v8"
                     ></path>
                   </svg>
                 </div>
@@ -325,23 +325,23 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path
+                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"
                     ></path>
                   </svg>
                 </div>
@@ -354,12 +354,12 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -367,9 +367,9 @@ const Capabilities = (props) => {
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M3 12c0-4.243 0-6.364 1.318-7.682S7.758 3 12 3s6.364 0 7.682 1.318S21 7.758 21 12s0 6.364-1.318 7.682S16.242 21 12 21s-6.364 0-7.682-1.318S3 16.242 3 12"></path>
                       <path d="M15 11v4c0 1.1-.657.997-1.6.997a2.35 2.35 0 0 1-1.697-.731A2.55 2.55 0 0 1 11 13.499c0-.663.253-1.299.703-1.767A2.35 2.35 0 0 1 13.4 11zm0 0V8M8 8v8"></path>
@@ -385,23 +385,23 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path
+                      d="M4 13h5m3 3V8h3a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-3m8-5v8M9 16v-5.5a2.5 2.5 0 0 0-5 0V16"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 13h5m3 3V8h3a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-3m8-5v8M9 16v-5.5a2.5 2.5 0 0 0-5 0V16"
                     ></path>
                   </svg>
                 </div>
@@ -416,23 +416,23 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path
+                      d="M5.636 19.364a9 9 0 1 1 12.728 0M16 9l-4 4"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5.636 19.364a9 9 0 1 1 12.728 0M16 9l-4 4"
                     ></path>
                   </svg>
                 </div>
@@ -445,25 +445,25 @@ const Capabilities = (props) => {
               <div className="capability-card">
                 <div className="capability-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <circle
+                      r="10"
                       cx="12"
                       cy="12"
-                      r="10"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     ></circle>
                   </svg>
                 </div>
@@ -635,14 +635,14 @@ const Capabilities = (props) => {
             <div className="cta-buttons">
               <Link href="/launch">
                 <a>
-                  <div className="capabilities-thq-btn-elm3 page-btn btn btn-accent btn-xl">
+                  <div className="capabilities-thq-btn-elm3 btn-accent btn btn-xl page-btn">
                     <span>Start Your Project</span>
                   </div>
                 </a>
               </Link>
               <Link href="/consultation">
                 <a>
-                  <div className="capabilities-thq-btn-elm4 page-btn btn btn-outline btn-xl">
+                  <div className="capabilities-thq-btn-elm4 btn btn-xl btn-outline page-btn">
                     <span>Schedule a Consultation</span>
                   </div>
                 </a>
