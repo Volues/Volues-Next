@@ -68,7 +68,11 @@ const Home = (props) => {
                     Launch Your Vision
                   </a>
                 </Link>
-                <button className="btn-lg btn btn-outline">Capabilities</button>
+                <Link href="/capabilities">
+                  <a className="home-link2 btn-lg btn btn-outline">
+                    Capabilities
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="hero-visual-container">
@@ -639,12 +643,12 @@ const Home = (props) => {
             </p>
             <div className="final-cta-buttons">
               <Link href="/launch">
-                <a className="home-link2 btn-accent btn btn-xl">
+                <a className="home-link3 btn-accent btn btn-xl">
                   Start Your Project
                 </a>
               </Link>
               <Link href="/consultation">
-                <a className="home-link3 btn btn-xl btn-outline">
+                <a className="home-link4 btn btn-xl btn-outline">
                   Speak to an Expert
                 </a>
               </Link>
@@ -790,6 +794,10 @@ const Home = (props) => {
             text-align: center;
             text-decoration: none;
           }
+          .home-link2 {
+            text-align: center;
+            text-decoration: none;
+          }
           .home-thq-projects-masonry-elm {
             gap: var(--spacing-2xl);
             margin: 0 auto;
@@ -797,11 +805,11 @@ const Home = (props) => {
             max-width: var(--content-max-width);
             grid-template-columns: repeat(3, 1fr);
           }
-          .home-link2 {
+          .home-link3 {
             text-align: center;
             text-decoration: none;
           }
-          .home-link3 {
+          .home-link4 {
             text-align: center;
             text-decoration: none;
           }
