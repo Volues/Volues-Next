@@ -257,7 +257,7 @@ const Footer = (props) => {
                       <input
                         type="email"
                         id="thq_textinput_78Kl"
-                        name="textinput"
+                        name="email"
                         required="true"
                         aria-label="Email address"
                         placeholder="Email address"
@@ -342,48 +342,91 @@ opacity: 1;}}
         <div className="footer-container4">
           <div className="footer-container5">
             <Script
-              html={`<script defer data-name="footer-newsletter">
-(function(){
-  const newsletterForm = document.querySelector('.footer-newsletter-form');
-  const emailInput = newsletterForm.querySelector('.footer-input');
-  const submitBtn = newsletterForm.querySelector('.footer-submit-btn');
+              html={`<script>
+        ;(function () {
+          const newsletterForm = document.querySelector(".footer-newsletter-form")
+          const emailInput = newsletterForm.querySelector(".footer-input")
+          const submitBtn = newsletterForm.querySelector(".footer-submit-btn")
 
-  newsletterForm.addEventListener('submit', (e) => {
-    // Native validation handles the check, this is for visual feedback
-    if (emailInput.checkValidity()) {
-      const originalIcon = submitBtn.innerHTML;
-      
-      // Visual feedback for submission
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12l5 5L20 7"/></svg>';
-      submitBtn.style.backgroundColor = '#2ecc71';
-      
-      emailInput.value = '';
-      emailInput.placeholder = 'Subscribed!';
-      emailInput.disabled = true;
+          function showSuccessNotification() {
+            const existing = document.querySelector('[data-role="success-notification"]')
+            if (existing) existing.remove()
 
-      // Restore button state after 3 seconds for demo purposes
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalIcon;
-        submitBtn.style.backgroundColor = '';
-        emailInput.disabled = false;
-        emailInput.placeholder = 'Email address';
-      }, 3000);
-    }
-  });
+            const notification = document.createElement("div")
+            notification.setAttribute("data-role", "success-notification")
+            notification.style.cssText = 'position:fixed;top:1rem;right:1rem;z-index:9999;background:#2ecc71;color:#fff;padding:1rem 1.5rem;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.3);display:flex;align-items:center;gap:0.75rem;font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:0.95rem;font-weight:600;transform:translateX(120%);transition:transform 0.5s cubic-bezier(0.22,1,0.36,1);pointer-events:none;'
 
-  // Real-time validation visual cue
-  emailInput.addEventListener('blur', () => {
-    const wrapper = document.querySelector('.footer-input-wrapper');
-    if (emailInput.value && !emailInput.checkValidity()) {
-      wrapper.style.borderColor = '#e74c3c';
-    } else {
-      wrapper.style.borderColor = '';
-    }
-  });
-})()
-</script>`}
+            const checkmark = document.createElement("span")
+            checkmark.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>'
+            checkmark.style.cssText = "display:inline-flex;animation:checkmark-pop 0.4s ease-out;"
+
+            const text = document.createElement("span")
+            text.textContent = "Success! Welcome to the Volues community."
+
+            notification.appendChild(checkmark)
+            notification.appendChild(text)
+            document.body.appendChild(notification)
+
+            requestAnimationFrame(() => {
+              notification.style.transform = "translateX(0)"
+            })
+
+            setTimeout(() => {
+              notification.style.opacity = "0"
+              notification.style.transform = "translateX(120%)"
+              notification.style.transition = "opacity 0.4s ease, transform 0.5s cubic-bezier(0.22,1,0.36,1)"
+              setTimeout(() => notification.remove(), 500)
+            }, 4000)
+          }
+
+          newsletterForm.addEventListener("submit", async (e) => {
+            e.preventDefault()
+            if (!emailInput.checkValidity()) return
+
+            const originalIcon = submitBtn.innerHTML
+            submitBtn.disabled = true
+            submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6 6l6-6m-6-6l6 6"/></svg>'
+
+            try {
+              const response = await fetch("https://volues.teamvolues.workers.dev/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: emailInput.value }),
+              })
+
+              if (response.ok) {
+                submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12l5 5L20 7"/></svg>'
+                submitBtn.style.backgroundColor = "#2ecc71"
+                emailInput.value = ""
+                emailInput.placeholder = "Subscribed!"
+                showSuccessNotification()
+              } else {
+                throw new Error("Submission failed")
+              }
+            } catch (err) {
+              submitBtn.innerHTML = originalIcon
+              submitBtn.disabled = false
+            }
+
+            setTimeout(() => {
+              submitBtn.disabled = false
+              submitBtn.innerHTML = originalIcon
+              submitBtn.style.backgroundColor = ""
+              emailInput.placeholder = "Email address"
+            }, 3000)
+          })
+
+          // Real-time validation visual cue
+          emailInput.addEventListener("blur", () => {
+            const wrapper = document.querySelector(".footer-input-wrapper")
+            if (emailInput.value && !emailInput.checkValidity()) {
+              wrapper.style.borderColor = "#e74c3c"
+            } else {
+              wrapper.style.borderColor = ""
+            }
+          })
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>
