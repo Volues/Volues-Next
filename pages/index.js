@@ -68,9 +68,7 @@ const Home = (props) => {
                     Launch Your Vision
                   </a>
                 </Link>
-                <button className="btn-lg btn btn-outline">
-                  View Projects
-                </button>
+                <button className="btn-lg btn btn-outline">Capabilities</button>
               </div>
             </div>
             <div className="hero-visual-container">
