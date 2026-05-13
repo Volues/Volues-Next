@@ -577,7 +577,7 @@ const Home = (props) => {
                 />
                 <div className="author-info">
                   <span className="author-name">Marcus Thorne</span>
-                  <span className="author-title">CTO, Nexus Corp</span>
+                  <span className="author-title">CTO, Neos Corp</span>
                 </div>
               </div>
             </div>
