@@ -224,7 +224,7 @@ const Navigation = (props) => {
             <div className="navigation-overlay-footer">
               <Link href="/contact">
                 <a>
-                  <div className="btn-lg btn navigation-overlay-cta btn-primary">
+                  <div className="btn-lg btn navigation-overlay-cta btn-primary navigation-thq-btn-elm2">
                     <span>Start a Project</span>
                   </div>
                 </a>
@@ -330,6 +330,16 @@ const Navigation = (props) => {
           }
           .navigation-container3 {
             display: contents;
+          }
+          @media (max-width: 767px) {
+            .navigation-thq-btn-elm2 {
+              display: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .navigation-thq-btn-elm2 {
+              display: none;
+            }
           }
         `}
       </style>
